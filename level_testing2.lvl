@@ -1,0 +1,46 @@
+##@author Alan Kuang
+##This is a Comment, Will not be read
+##Each tile is represented by 1 unsigned int.
+##UINT has 32 bits
+##UINT FORMAT 0 0 0 0 0 0 0 0
+##            u u u e w w w w
+##u = unassigned e = enemy spawn w = wall
+##wall direction in order WSEN
+##The easy way to find the perfect number is using a binary to decimal calculator
+##each tile is 50x50
+##800x600 = 16x12 tiles
+##Level File Format 
+##top left to bottom right
+##encoded in UTF-8
+
+##Level Data
+--BEGIN--
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 63 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+0 0 14 0   0 0 8 0   0 0 0 0   0 0 0 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 2046
+0 0 0 0   0 0 56 0   0 0 0 0   0 0 2048 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 2049 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 2050 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 3 4 15
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 6144 15
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 15
+--END--
+
+##Item Data
+##must have same amount as nums on map
+##x y and desc
+--ITEM_MANIFEST--
+14 0 Sword "Alan's Placeholder" "Description" 
+3 4 HealthPotion "tonic"
+--END--
+
+##may or may not be used because we have few many enemies
+##, so we can afford storing it as bits on unsigned int.
+##Enemy Data
+--ENEMY_MANIFEST--
+--END--
+
+

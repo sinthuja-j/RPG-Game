@@ -1,0 +1,280 @@
+\hypertarget{classGame}{}\doxysection{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\+hpp$>$}
+
+
+
+Collaboration diagram for Game\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\item 
+\mbox{\hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game}} ()
+\item 
+void \mbox{\hyperlink{classGame_aa2adffa9eaae0c724e850c06fc86dbb1}{title\+Screen}} ()
+\item 
+void \mbox{\hyperlink{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}{run}} ()
+\begin{DoxyCompactList}\small\item\em Main game loop, handles all game logic. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGame_a06b3e01ef0b22475e583fcf80c11df72}\label{classGame_a06b3e01ef0b22475e583fcf80c11df72}} 
+void \mbox{\hyperlink{classGame_a06b3e01ef0b22475e583fcf80c11df72}{add\+Enemy}} (\mbox{\hyperlink{classEnemy}{Enemy}} $\ast$enemy)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGame_a06b3e01ef0b22475e583fcf80c11df72}{add\+Enemy()}} adds an enemy to the game \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGame_ae91ba7bdefd915c685277439ccf4ebd7}\label{classGame_ae91ba7bdefd915c685277439ccf4ebd7}} 
+void {\bfseries wall\+Push} (SDL\+\_\+\+Rect player, std\+::vector$<$ SDL\+\_\+\+Rect $>$ walls)
+\item 
+void \mbox{\hyperlink{classGame_a01433fb979a7ea3d349bc1d96ebfbae4}{load\+Level}} (std\+::string fn)
+\begin{DoxyCompactList}\small\item\em Loads level files with unsigned int metadata, and initializes the grid of Tiles that have wall geometry and enemy spawns. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a3257bc5d6fb1a75241b1e1b0545d7052}{draw\+Item}} (unsigned int metadata, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draws an item on the map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGame_a854390cde9a65241d23a704163a15757}\label{classGame_a854390cde9a65241d23a704163a15757}} 
+bool \mbox{\hyperlink{classGame_a854390cde9a65241d23a704163a15757}{is\+Enemy\+Dead}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGame_a854390cde9a65241d23a704163a15757}{is\+Enemy\+Dead()}} checks if all enemies are dead \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a1bc986f7e240674c09ac037e697b90de}{loss\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em called when player dies, displays loss screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a4107ac013d69aaab4c160c5744bc927b}{victory\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGame_a4107ac013d69aaab4c160c5744bc927b}{victory\+Screen()}} is called when win condition is met \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_ac8b8d88c75c7cacac0385223ec3232ca}{enemy\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Handles enemy collision with player, and player attack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGame_a99725bf8fb6291ba0f60fdbe40a70dee}{check\+Input}} (bool item\+Int)
+\item 
+void \mbox{\hyperlink{classGame_a47c726a80fd133c0a4f6b8fba56d8832}{reset\+Game}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGame_a47c726a80fd133c0a4f6b8fba56d8832}{reset\+Game()}} is called when the player chooses to reset the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGame_a5d191f75b0ce81bf50a1be7bc8f27ecf}\label{classGame_a5d191f75b0ce81bf50a1be7bc8f27ecf}} 
+\mbox{\hyperlink{classMainWindow}{Main\+Window}} {\bfseries main\+Window}
+\item 
+\mbox{\Hypertarget{classGame_abae6c6fce1dc717e3549ddbe616daaf8}\label{classGame_abae6c6fce1dc717e3549ddbe616daaf8}} 
+\mbox{\hyperlink{classInput}{Input}} {\bfseries input}
+\item 
+\mbox{\Hypertarget{classGame_a6e48721b0532833b99fd5615a3628792}\label{classGame_a6e48721b0532833b99fd5615a3628792}} 
+\mbox{\hyperlink{classPlayer}{Player}} {\bfseries player}
+\item 
+\mbox{\Hypertarget{classGame_a71c302ac22ac82f50629c557b2a3dac9}\label{classGame_a71c302ac22ac82f50629c557b2a3dac9}} 
+\mbox{\hyperlink{classEnemy}{Enemy}} {\bfseries enemy} = \mbox{\hyperlink{classEnemy}{Enemy}}(200, 500, 30, 1, 10, 10, \textquotesingle{}l\textquotesingle{}, false, 1000)
+\item 
+\mbox{\Hypertarget{classGame_a963c667002205b9e6fb62e41f0a65b96}\label{classGame_a963c667002205b9e6fb62e41f0a65b96}} 
+int {\bfseries sword\+Damage}
+\item 
+\mbox{\Hypertarget{classGame_a5291cbdc87e995f9acd4656157ed95f2}\label{classGame_a5291cbdc87e995f9acd4656157ed95f2}} 
+\mbox{\hyperlink{classGraphics}{Graphics}} $\ast$ {\bfseries graphics}
+\item 
+\mbox{\Hypertarget{classGame_adb424734b2454f9ed1e6d6bd44e6dfaf}\label{classGame_adb424734b2454f9ed1e6d6bd44e6dfaf}} 
+bool {\bfseries is\+Running} = true
+\item 
+\mbox{\Hypertarget{classGame_a47aa8f19ad5a93279716c4ab351a1903}\label{classGame_a47aa8f19ad5a93279716c4ab351a1903}} 
+bool {\bfseries item\+Int} = false
+\item 
+\mbox{\Hypertarget{classGame_aa5b864c9e923d46009e4baedca585d43}\label{classGame_aa5b864c9e923d46009e4baedca585d43}} 
+\mbox{\hyperlink{classInventory}{Inventory}} $\ast$ {\bfseries map\+Inventory}
+\item 
+\mbox{\Hypertarget{classGame_af8d6bb2588a813d6f6304a9ced8a944a}\label{classGame_af8d6bb2588a813d6f6304a9ced8a944a}} 
+\mbox{\hyperlink{classInventory}{Inventory}} $\ast$ {\bfseries player\+Inventory}
+\item 
+\mbox{\Hypertarget{classGame_a440bc3f0cc013da37f0ec84b4ffe369c}\label{classGame_a440bc3f0cc013da37f0ec84b4ffe369c}} 
+\mbox{\hyperlink{classItem}{Item}} $\ast$ {\bfseries target}
+\item 
+\mbox{\Hypertarget{classGame_a89afcb5cfad1cc824b04589581f0ab33}\label{classGame_a89afcb5cfad1cc824b04589581f0ab33}} 
+bool {\bfseries toggle\+Inventory}
+\item 
+\mbox{\Hypertarget{classGame_a85ab4d0ae53d6e7f16df229f22773816}\label{classGame_a85ab4d0ae53d6e7f16df229f22773816}} 
+bool {\bfseries toggle\+On}
+\item 
+\mbox{\Hypertarget{classGame_a8f8540c8f9243f198b4476e019b80773}\label{classGame_a8f8540c8f9243f198b4476e019b80773}} 
+bool {\bfseries toggle\+Curr}
+\item 
+\mbox{\Hypertarget{classGame_aacc03c1d90664c1cee941f1c32ca1060}\label{classGame_aacc03c1d90664c1cee941f1c32ca1060}} 
+bool {\bfseries enemy\+Spawn}
+\item 
+\mbox{\Hypertarget{classGame_a29e5e11978d28aac90748d484ddd1219}\label{classGame_a29e5e11978d28aac90748d484ddd1219}} 
+std\+::vector$<$ \mbox{\hyperlink{classEnemy}{Enemy}} $\ast$ $>$ {\bfseries enemies}
+\item 
+\mbox{\Hypertarget{classGame_a3c81096e1ae01334ec77799f923d852b}\label{classGame_a3c81096e1ae01334ec77799f923d852b}} 
+const std\+::vector$<$ \mbox{\hyperlink{classPlayer}{Player}} $\ast$ $>$ {\bfseries player\+Vector}
+\item 
+\mbox{\Hypertarget{classGame_ac7070f689728f150ef51cb41f6438799}\label{classGame_ac7070f689728f150ef51cb41f6438799}} 
+int {\bfseries equipped\+Item}
+\item 
+\mbox{\Hypertarget{classGame_a079b6fb15b2c19192f1aa4db13ce9496}\label{classGame_a079b6fb15b2c19192f1aa4db13ce9496}} 
+bool {\bfseries pause\+On}
+\item 
+\mbox{\Hypertarget{classGame_ada0d1d13454017de0f362b9f3ec86218}\label{classGame_ada0d1d13454017de0f362b9f3ec86218}} 
+bool {\bfseries toggle\+Pause}
+\item 
+\mbox{\Hypertarget{classGame_a77bdcc6b62230e5ca08db7a54d62ef1c}\label{classGame_a77bdcc6b62230e5ca08db7a54d62ef1c}} 
+bool {\bfseries level\+Cleared}
+\item 
+\mbox{\Hypertarget{classGame_a7f0e5dd3045db826d1a2ec5875d3bb33}\label{classGame_a7f0e5dd3045db826d1a2ec5875d3bb33}} 
+bool {\bfseries level\+Loaded}
+\item 
+\mbox{\Hypertarget{classGame_a583f6b0812b269026bba1c9d163bc5e9}\label{classGame_a583f6b0812b269026bba1c9d163bc5e9}} 
+std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{classTile}{Tile}} $\ast$ $>$ $>$ {\bfseries tile\+GridV}
+\item 
+\mbox{\Hypertarget{classGame_a7a27091f05c6a25e09214d0c05181d77}\label{classGame_a7a27091f05c6a25e09214d0c05181d77}} 
+std\+::vector$<$ SDL\+\_\+\+Rect $>$ {\bfseries current\+Walls}
+\item 
+\mbox{\Hypertarget{classGame_aa70ef8e1ff88b8fc6375aaf7de7aa5e7}\label{classGame_aa70ef8e1ff88b8fc6375aaf7de7aa5e7}} 
+std\+::queue$<$ std\+::string $>$ {\bfseries level\+List}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classGame}{Game}} loop header file \mbox{\hyperlink{classGame}{Game}} loop class prototype 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\label{classGame_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor prototype \mbox{\Hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}\label{classGame_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor prototype 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame_a99725bf8fb6291ba0f60fdbe40a70dee}\label{classGame_a99725bf8fb6291ba0f60fdbe40a70dee}} 
+\index{Game@{Game}!checkInput@{checkInput}}
+\index{checkInput@{checkInput}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{checkInput()}{checkInput()}}
+{\footnotesize\ttfamily void Game\+::check\+Input (\begin{DoxyParamCaption}\item[{bool}]{item\+Int }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Checks input of user and handles it 
+\begin{DoxyParams}{Parameters}
+{\em item\+Int} & for testing of collision \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a3257bc5d6fb1a75241b1e1b0545d7052}\label{classGame_a3257bc5d6fb1a75241b1e1b0545d7052}} 
+\index{Game@{Game}!drawItem@{drawItem}}
+\index{drawItem@{drawItem}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{drawItem()}{drawItem()}}
+{\footnotesize\ttfamily void Game\+::draw\+Item (\begin{DoxyParamCaption}\item[{unsigned int}]{metadata,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draws an item on the map. 
+
+\begin{DoxyAuthor}{Author}
+Jaree 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classGame_ac8b8d88c75c7cacac0385223ec3232ca}\label{classGame_ac8b8d88c75c7cacac0385223ec3232ca}} 
+\index{Game@{Game}!enemyHandler@{enemyHandler}}
+\index{enemyHandler@{enemyHandler}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{enemyHandler()}{enemyHandler()}}
+{\footnotesize\ttfamily void Game\+::enemy\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles enemy collision with player, and player attack. 
+
+\mbox{\hyperlink{classEnemy}{Enemy}} Handler \begin{DoxyAuthor}{Author}
+Aidan 
+
+Jaree 
+
+Chase 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classGame_a01433fb979a7ea3d349bc1d96ebfbae4}\label{classGame_a01433fb979a7ea3d349bc1d96ebfbae4}} 
+\index{Game@{Game}!loadLevel@{loadLevel}}
+\index{loadLevel@{loadLevel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{loadLevel()}{loadLevel()}}
+{\footnotesize\ttfamily void Game\+::load\+Level (\begin{DoxyParamCaption}\item[{std\+::string}]{fn }\end{DoxyParamCaption})}
+
+
+
+Loads level files with unsigned int metadata, and initializes the grid of Tiles that have wall geometry and enemy spawns. 
+
+\begin{DoxyAuthor}{Author}
+Alan Level Loader 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & Filename .lvl file inspired by .ply \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a1bc986f7e240674c09ac037e697b90de}\label{classGame_a1bc986f7e240674c09ac037e697b90de}} 
+\index{Game@{Game}!lossScreen@{lossScreen}}
+\index{lossScreen@{lossScreen}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{lossScreen()}{lossScreen()}}
+{\footnotesize\ttfamily void Game\+::loss\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+called when player dies, displays loss screen 
+
+Death screen prototype
+
+\begin{DoxyAuthor}{Authors}
+Chase, Aidan 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classGame_a47c726a80fd133c0a4f6b8fba56d8832}\label{classGame_a47c726a80fd133c0a4f6b8fba56d8832}} 
+\index{Game@{Game}!resetGame@{resetGame}}
+\index{resetGame@{resetGame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{resetGame()}{resetGame()}}
+{\footnotesize\ttfamily void Game\+::reset\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classGame_a47c726a80fd133c0a4f6b8fba56d8832}{reset\+Game()}} is called when the player chooses to reset the game 
+
+\begin{DoxyAuthor}{Author}
+Aidan 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}\label{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}} 
+\index{Game@{Game}!run@{run}}
+\index{run@{run}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Game\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main game loop, handles all game logic. 
+
+\mbox{\hyperlink{classGame}{Game}} loop runner prototype
+
+Doxygen comments for \mbox{\hyperlink{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}{run()}} \begin{DoxyAuthor}{Author}
+Aidan 
+
+Jaree 
+
+Chase 
+\end{DoxyAuthor}
+\mbox{\hyperlink{classEnemy}{Enemy}} Draw\mbox{\Hypertarget{classGame_aa2adffa9eaae0c724e850c06fc86dbb1}\label{classGame_aa2adffa9eaae0c724e850c06fc86dbb1}} 
+\index{Game@{Game}!titleScreen@{titleScreen}}
+\index{titleScreen@{titleScreen}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{titleScreen()}{titleScreen()}}
+{\footnotesize\ttfamily void Game\+::title\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The first method called from main, creates the starting screen before the player clicks enter \begin{DoxyAuthor}{Author}
+Chase 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classGame_a4107ac013d69aaab4c160c5744bc927b}\label{classGame_a4107ac013d69aaab4c160c5744bc927b}} 
+\index{Game@{Game}!victoryScreen@{victoryScreen}}
+\index{victoryScreen@{victoryScreen}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{victoryScreen()}{victoryScreen()}}
+{\footnotesize\ttfamily void Game\+::victory\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classGame_a4107ac013d69aaab4c160c5744bc927b}{victory\+Screen()}} is called when win condition is met 
+
+\begin{DoxyAuthor}{Author}
+Chase 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game.\+hpp\item 
+Game.\+cpp\end{DoxyCompactItemize}

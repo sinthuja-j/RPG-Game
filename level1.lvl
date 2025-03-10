@@ -1,0 +1,39 @@
+##@author Alan Kuang
+##This is a Comment, Will not be read
+##Each tile is represented by 1 unsigned int.
+##UINT has 32 bits
+##UINT FORMAT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+##            i i i i i t t t n n n e w w w w
+##u = unassigned e = enemy spawn w = wall n = num of enemies up to 7 in 1 tile i = item on tile 5 bit numerical item ID
+##t = enemy type 3 bit Enemy ID unused due to time constraints
+##Enemy type manifest
+##Enemy 0 = slime
+##Item Type manifest
+##item 1 = sword
+##item 2 = shield
+##item 3 = HealthPotion
+##wall direction in order WSEN
+##The easy way to find the perfect number is using a binary to decimal calculator
+##each tile is 50x50
+##800x600 = 16x12 tiles
+##Level File Format 
+##top left to bottom right
+##encoded in UTF-8
+
+##Level Data
+--BEGIN--
+4 4 0 0   0 0 0 0   0 0 0 0   0 0 63 0
+0 4 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+0 4 14 0   0 0 8 0   0 0 0 0   0 0 0 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 0
+0 0 0 0   0 0 0 0   0 0 0 0   0 0 0 1
+--END--
+
+

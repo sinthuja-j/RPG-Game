@@ -1,0 +1,148 @@
+\hypertarget{classGraphics}{}\doxysection{Graphics Class Reference}
+\label{classGraphics}\index{Graphics@{Graphics}}
+
+
+{\ttfamily \#include $<$Graphics.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGraphics_ab13e4078a6a98f2b3bd8927b061cb1d2}{Graphics}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGraphics}{Graphics}}\+: This is an important class for GUI aspects of the game. Covers functionality like sprite loading, rendering, updating, and clearing. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGraphics_a7841c9a961ac9bca33bd30ddf8066cdb}{$\sim$\+Graphics}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGraphics}{Graphics}} Destructor, used to clean up memory and prevent memory leaks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGraphics_a981ff7614dd04de2cf760d6b24369f87}{load\+Sprite}} (const std\+::string \&name, const std\+::string \&filepath)
+\begin{DoxyCompactList}\small\item\em load\+Sprite\+: This method loads a sprite into memory, so that it can be rendered when needed, oftentimes, an entire spritemap image is loaded in, and users will choose specific parts of the loaded image to render \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGraphics_af1e834a2e746b5e6937743eb3741b7a9}{render\+Sprite}} (const std\+::string \&name, int x, int y, SDL\+\_\+\+Rect my\+Rect)
+\begin{DoxyCompactList}\small\item\em render\+Sprite\+: This method is what specifically deals with placing images on the screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGraphics_a5a5297a160c22f73300dcf72ac0be7c2}{update}} ()
+\begin{DoxyCompactList}\small\item\em update\+: repeatedly called to continuously update the graphics as the game runs \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGraphics_a5006edbbdc540af376d4787f9d56fbdd}{clear}} ()
+\begin{DoxyCompactList}\small\item\em clears the renderer, used when u want to begin rendering new things \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGraphics_afee9119ae93eafc5707a9e868b539a2e}\label{classGraphics_afee9119ae93eafc5707a9e868b539a2e}} 
+SDL\+\_\+\+Renderer $\ast$ {\bfseries renderer}
+\item 
+\mbox{\Hypertarget{classGraphics_a758acfda06923d5df8a95cfdf9b0b3e5}\label{classGraphics_a758acfda06923d5df8a95cfdf9b0b3e5}} 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{structSprite}{Sprite}} $>$ {\bfseries sprite\+Map}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classGraphics}{Graphics}} class prototype 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGraphics_ab13e4078a6a98f2b3bd8927b061cb1d2}\label{classGraphics_ab13e4078a6a98f2b3bd8927b061cb1d2}} 
+\index{Graphics@{Graphics}!Graphics@{Graphics}}
+\index{Graphics@{Graphics}!Graphics@{Graphics}}
+\doxysubsubsection{\texorpdfstring{Graphics()}{Graphics()}}
+{\footnotesize\ttfamily Graphics\+::\+Graphics (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classGraphics}{Graphics}}\+: This is an important class for GUI aspects of the game. Covers functionality like sprite loading, rendering, updating, and clearing. 
+
+constructor prototype 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & an SDL renderer for rendering\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Chase \mbox{\hyperlink{classGraphics}{Graphics}} constructor, class used to generate graphics for the game 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & and SDL\+\_\+\+Renderer which is the SDL feature allowing graphics rendering \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraphics_a7841c9a961ac9bca33bd30ddf8066cdb}\label{classGraphics_a7841c9a961ac9bca33bd30ddf8066cdb}} 
+\index{Graphics@{Graphics}!````~Graphics@{$\sim$Graphics}}
+\index{````~Graphics@{$\sim$Graphics}!Graphics@{Graphics}}
+\doxysubsubsection{\texorpdfstring{$\sim$Graphics()}{~Graphics()}}
+{\footnotesize\ttfamily Graphics\+::$\sim$\+Graphics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classGraphics}{Graphics}} Destructor, used to clean up memory and prevent memory leaks. 
+
+destructor prototype 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGraphics_a5006edbbdc540af376d4787f9d56fbdd}\label{classGraphics_a5006edbbdc540af376d4787f9d56fbdd}} 
+\index{Graphics@{Graphics}!clear@{clear}}
+\index{clear@{clear}!Graphics@{Graphics}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Graphics\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+clears the renderer, used when u want to begin rendering new things 
+
+prototype for clearing renderer \mbox{\Hypertarget{classGraphics_a981ff7614dd04de2cf760d6b24369f87}\label{classGraphics_a981ff7614dd04de2cf760d6b24369f87}} 
+\index{Graphics@{Graphics}!loadSprite@{loadSprite}}
+\index{loadSprite@{loadSprite}!Graphics@{Graphics}}
+\doxysubsubsection{\texorpdfstring{loadSprite()}{loadSprite()}}
+{\footnotesize\ttfamily void Graphics\+::load\+Sprite (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{filepath }\end{DoxyParamCaption})}
+
+
+
+load\+Sprite\+: This method loads a sprite into memory, so that it can be rendered when needed, oftentimes, an entire spritemap image is loaded in, and users will choose specific parts of the loaded image to render 
+
+prototype for loading a sprite into memory 
+\begin{DoxyParams}{Parameters}
+{\em name} & defines variable for sprite \\
+\hline
+{\em filepath} & path for the file\\
+\hline
+{\em name} & a string used to call the sprite image what you want \\
+\hline
+{\em filepath} & a string representing the path to find the image you want to load \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraphics_af1e834a2e746b5e6937743eb3741b7a9}\label{classGraphics_af1e834a2e746b5e6937743eb3741b7a9}} 
+\index{Graphics@{Graphics}!renderSprite@{renderSprite}}
+\index{renderSprite@{renderSprite}!Graphics@{Graphics}}
+\doxysubsubsection{\texorpdfstring{renderSprite()}{renderSprite()}}
+{\footnotesize\ttfamily void Graphics\+::render\+Sprite (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{SDL\+\_\+\+Rect}]{my\+Rect }\end{DoxyParamCaption})}
+
+
+
+render\+Sprite\+: This method is what specifically deals with placing images on the screen 
+
+prototype for rendering a sprite from memory 
+\begin{DoxyParams}{Parameters}
+{\em name} & the name variable used to define what you are rendering \\
+\hline
+{\em x} & the x position of the sprite \\
+\hline
+{\em y} & the y position of the sprite \\
+\hline
+{\em my\+Rect} & the SDL\+\_\+\+Rect that the sprite will be rendered on\\
+\hline
+{\em name} & a string used to define what sprite you are rendering \\
+\hline
+{\em x} & the x position of the sprite \\
+\hline
+{\em y} & the y position of the sprite \\
+\hline
+{\em my\+Rect} & the part of the image you are rendering useful for sprite maps, you must make a SDL\+\_\+\+Rect of desired size to pass into the method, if your image is a singular sprite, you just make the rectangle, the parameters of the whole image. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraphics_a5a5297a160c22f73300dcf72ac0be7c2}\label{classGraphics_a5a5297a160c22f73300dcf72ac0be7c2}} 
+\index{Graphics@{Graphics}!update@{update}}
+\index{update@{update}!Graphics@{Graphics}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Graphics\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+update\+: repeatedly called to continuously update the graphics as the game runs 
+
+prototype for updating renderer 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Graphics.\+hpp\item 
+Graphics.\+cpp\end{DoxyCompactItemize}

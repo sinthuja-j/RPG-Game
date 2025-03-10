@@ -1,0 +1,174 @@
+\hypertarget{classSword}{}\doxysection{Sword Class Reference}
+\label{classSword}\index{Sword@{Sword}}
+
+
+{\ttfamily \#include $<$Sword.\+hpp$>$}
+
+
+
+Inheritance diagram for Sword\+:
+% FIG 0
+
+
+Collaboration diagram for Sword\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSword_abe4d83894d18c260236fa81330098fec}{use}} () override
+\begin{DoxyCompactList}\small\item\em Prototype for sword use. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSword_ac39be995385354d01b84e57ec5da55c2}{Sword}} (string name, string description, int x, int y, bool active, int hb\+Width, int hb\+Height, int damage, int range, \mbox{\hyperlink{classGraphics}{Graphics}} $\ast$graphics)
+\begin{DoxyCompactList}\small\item\em Prototype for attack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSword_aa0a85167fba171274ca1b95626dc8d20}{attack}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for collision with player. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSword_a9b3b9035374517b51d55b99b242cae86}{get\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em Prototype getters and setters for damage and range. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSword_ad91c14974dd357b381a6c05e527a0c5b}{get\+Range}} ()
+\begin{DoxyCompactList}\small\item\em Getter for sword range. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSword_a641bd4f94606c118e8b7e37fd900f07b}{set\+Damage}} (int x)
+\begin{DoxyCompactList}\small\item\em Setter for sword damage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSword_ad1f2bd9a67f2133230b6775876349c5d}{set\+Range}} (int x)
+\begin{DoxyCompactList}\small\item\em Setter for sword range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSword_a1a044693ee1cb25025d53b9f6c96ee23}\label{classSword_a1a044693ee1cb25025d53b9f6c96ee23}} 
+int {\bfseries damage}
+\item 
+\mbox{\Hypertarget{classSword_ab63e364b0f243694a0104d4b0830a109}\label{classSword_ab63e364b0f243694a0104d4b0830a109}} 
+int {\bfseries range}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for sword class \mbox{\hyperlink{classSword}{Sword}} class prototype 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSword_ac39be995385354d01b84e57ec5da55c2}\label{classSword_ac39be995385354d01b84e57ec5da55c2}} 
+\index{Sword@{Sword}!Sword@{Sword}}
+\index{Sword@{Sword}!Sword@{Sword}}
+\doxysubsubsection{\texorpdfstring{Sword()}{Sword()}}
+{\footnotesize\ttfamily Sword\+::\+Sword (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{description,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{bool}]{active,  }\item[{int}]{hb\+Width,  }\item[{int}]{hb\+Height,  }\item[{int}]{damage,  }\item[{int}]{range,  }\item[{\mbox{\hyperlink{classGraphics}{Graphics}} $\ast$}]{graphics }\end{DoxyParamCaption})}
+
+
+
+Prototype for attack. 
+
+\mbox{\hyperlink{classSword}{Sword}} Class extends item. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSword_aa0a85167fba171274ca1b95626dc8d20}\label{classSword_aa0a85167fba171274ca1b95626dc8d20}} 
+\index{Sword@{Sword}!attack@{attack}}
+\index{attack@{attack}!Sword@{Sword}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily void Sword\+::attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for collision with player. 
+
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+Prototype for sword attack \mbox{\Hypertarget{classSword_a9b3b9035374517b51d55b99b242cae86}\label{classSword_a9b3b9035374517b51d55b99b242cae86}} 
+\index{Sword@{Sword}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!Sword@{Sword}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily int Sword\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype getters and setters for damage and range. 
+
+Getter for sword damage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & damage value or range value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int value for damage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSword_ad91c14974dd357b381a6c05e527a0c5b}\label{classSword_ad91c14974dd357b381a6c05e527a0c5b}} 
+\index{Sword@{Sword}!getRange@{getRange}}
+\index{getRange@{getRange}!Sword@{Sword}}
+\doxysubsubsection{\texorpdfstring{getRange()}{getRange()}}
+{\footnotesize\ttfamily int Sword\+::get\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for sword range. 
+
+\begin{DoxyReturn}{Returns}
+int value for range 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSword_a641bd4f94606c118e8b7e37fd900f07b}\label{classSword_a641bd4f94606c118e8b7e37fd900f07b}} 
+\index{Sword@{Sword}!setDamage@{setDamage}}
+\index{setDamage@{setDamage}!Sword@{Sword}}
+\doxysubsubsection{\texorpdfstring{setDamage()}{setDamage()}}
+{\footnotesize\ttfamily void Sword\+::set\+Damage (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Setter for sword damage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & value for damage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSword_ad1f2bd9a67f2133230b6775876349c5d}\label{classSword_ad1f2bd9a67f2133230b6775876349c5d}} 
+\index{Sword@{Sword}!setRange@{setRange}}
+\index{setRange@{setRange}!Sword@{Sword}}
+\doxysubsubsection{\texorpdfstring{setRange()}{setRange()}}
+{\footnotesize\ttfamily void Sword\+::set\+Range (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Setter for sword range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & value for range \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSword_abe4d83894d18c260236fa81330098fec}\label{classSword_abe4d83894d18c260236fa81330098fec}} 
+\index{Sword@{Sword}!use@{use}}
+\index{use@{use}!Sword@{Sword}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void Sword\+::use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Prototype for sword use. 
+
+Prototype for constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of sword \\
+\hline
+{\em description} & description of sword \\
+\hline
+{\em x} & x position of sword \\
+\hline
+{\em y} & y position of sword \\
+\hline
+{\em active} & is sword being used? \\
+\hline
+{\em damage} & how much damage will the sword do \\
+\hline
+{\em range} & how far will the sword strike \\
+\hline
+{\em graphics} & graphics renderer \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classItem_aad2a6437f8ac3add1cd002d0e53c34c3}{Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sword.\+hpp\item 
+Sword.\+cpp\end{DoxyCompactItemize}

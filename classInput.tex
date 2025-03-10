@@ -1,0 +1,71 @@
+\hypertarget{classInput}{}\doxysection{Input Class Reference}
+\label{classInput}\index{Input@{Input}}
+
+
+\mbox{\hyperlink{classInput}{Input}} class header.  
+
+
+
+
+{\ttfamily \#include $<$Input.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classInput_aa7fe26710dd863d11737bf2f6de4ad05}{update}} ()
+\begin{DoxyCompactList}\small\item\em prototype for the input update function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInput_aea17facd725c667178b1c70f0b74294b}{is\+Key\+Down}} (SDL\+\_\+\+Scancode key)
+\begin{DoxyCompactList}\small\item\em prototype for detecting keypress \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classInput_a17658ade020a88b15fb1109ada283e70}\label{classInput_a17658ade020a88b15fb1109ada283e70}} 
+const Uint8 $\ast$ {\bfseries current\+Key\+States} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classInput}{Input}} class header. 
+
+\mbox{\hyperlink{classInput}{Input}} class prototype May be redundant 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInput_aea17facd725c667178b1c70f0b74294b}\label{classInput_aea17facd725c667178b1c70f0b74294b}} 
+\index{Input@{Input}!isKeyDown@{isKeyDown}}
+\index{isKeyDown@{isKeyDown}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{isKeyDown()}{isKeyDown()}}
+{\footnotesize\ttfamily bool Input\+::is\+Key\+Down (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Scancode}]{key }\end{DoxyParamCaption})}
+
+
+
+prototype for detecting keypress 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & for detecting key type\\
+\hline
+\end{DoxyParams}
+checks if key is pressed \begin{DoxyReturn}{Returns}
+bool value for press 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInput_aa7fe26710dd863d11737bf2f6de4ad05}\label{classInput_aa7fe26710dd863d11737bf2f6de4ad05}} 
+\index{Input@{Input}!update@{update}}
+\index{update@{update}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Input\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prototype for the input update function 
+
+updates key state
+
+\mbox{\hyperlink{classInput}{Input}} Class handles all user input \begin{DoxyAuthor}{Author}
+Chase 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Input.\+hpp\item 
+Input.\+cpp\end{DoxyCompactItemize}

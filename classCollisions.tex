@@ -1,0 +1,125 @@
+\hypertarget{classCollisions}{}\doxysection{Collisions Class Reference}
+\label{classCollisions}\index{Collisions@{Collisions}}
+
+
+{\ttfamily \#include $<$Collisions.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCollisions_a006630da4b62b10ebf123c6333c2b198}{Collisions}} ()
+\begin{DoxyCompactList}\small\item\em Encompasses collisions between any two SDL\+\_\+\+Rects. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCollisions_a39a613fd2a130b096c616f74f776d2f9}{$\sim$\+Collisions}} ()
+\item 
+bool \mbox{\hyperlink{classCollisions_abfbc866b781d2b041042acf44e0fe4c2}{detect\+Collision\+HB}} (const SDL\+\_\+\+Rect \&entity1, const SDL\+\_\+\+Rect \&entity2)
+\item 
+void \mbox{\hyperlink{classCollisions_aa0ec7eb6cddec80175aee795cf647f11}{wall\+Collision}} (const std\+::vector$<$ \mbox{\hyperlink{classEnemy}{Enemy}} $\ast$ $>$ \&p, const std\+::vector$<$ SDL\+\_\+\+Rect $>$ \&wall)
+\item 
+void \mbox{\hyperlink{classCollisions_ab764161b0e5b26da105deeacd060507a}{wall\+Collision}} (\mbox{\hyperlink{classPlayer}{Player}} \&p, const std\+::vector$<$ SDL\+\_\+\+Rect $>$ \&wall, \mbox{\hyperlink{classInput}{Input}} \&in)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCollisions_aa9bdc9a0a3a3a7d29e5ce6e2a4c5b650}\label{classCollisions_aa9bdc9a0a3a3a7d29e5ce6e2a4c5b650}} 
+int {\bfseries entityx}
+\item 
+\mbox{\Hypertarget{classCollisions_a818cc4d0dbb8435e7f6ea57c9bdb62f7}\label{classCollisions_a818cc4d0dbb8435e7f6ea57c9bdb62f7}} 
+int {\bfseries entityy}
+\item 
+\mbox{\Hypertarget{classCollisions_a92c40b7d5c8ff25000acf3e5b8c7d05a}\label{classCollisions_a92c40b7d5c8ff25000acf3e5b8c7d05a}} 
+int {\bfseries entityw}
+\item 
+\mbox{\Hypertarget{classCollisions_a74df3f75817e7cf9b5389914aa707492}\label{classCollisions_a74df3f75817e7cf9b5389914aa707492}} 
+int {\bfseries entityh}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCollisions}{Collisions}} header file \begin{DoxyAuthor}{Author}
+Alan Kuang \mbox{\hyperlink{classCollisions}{Collisions}} class prototype 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCollisions_a006630da4b62b10ebf123c6333c2b198}\label{classCollisions_a006630da4b62b10ebf123c6333c2b198}} 
+\index{Collisions@{Collisions}!Collisions@{Collisions}}
+\index{Collisions@{Collisions}!Collisions@{Collisions}}
+\doxysubsubsection{\texorpdfstring{Collisions()}{Collisions()}}
+{\footnotesize\ttfamily Collisions\+::\+Collisions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Encompasses collisions between any two SDL\+\_\+\+Rects. 
+
+Constructor prototype
+
+Collision Class \begin{DoxyAuthor}{Author}
+Alan Kuang (akuang4) constructor 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classCollisions_a39a613fd2a130b096c616f74f776d2f9}\label{classCollisions_a39a613fd2a130b096c616f74f776d2f9}} 
+\index{Collisions@{Collisions}!````~Collisions@{$\sim$Collisions}}
+\index{````~Collisions@{$\sim$Collisions}!Collisions@{Collisions}}
+\doxysubsubsection{\texorpdfstring{$\sim$Collisions()}{~Collisions()}}
+{\footnotesize\ttfamily Collisions\+::$\sim$\+Collisions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor
+
+destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCollisions_abfbc866b781d2b041042acf44e0fe4c2}\label{classCollisions_abfbc866b781d2b041042acf44e0fe4c2}} 
+\index{Collisions@{Collisions}!detectCollisionHB@{detectCollisionHB}}
+\index{detectCollisionHB@{detectCollisionHB}!Collisions@{Collisions}}
+\doxysubsubsection{\texorpdfstring{detectCollisionHB()}{detectCollisionHB()}}
+{\footnotesize\ttfamily bool Collisions\+::detect\+Collision\+HB (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Rect \&}]{entity1,  }\item[{const SDL\+\_\+\+Rect \&}]{entity2 }\end{DoxyParamCaption})}
+
+Detect Collision Hitbox 
+\begin{DoxyParams}{Parameters}
+{\em entity1} & first hitbox \\
+\hline
+{\em entity2} & second hitbox\\
+\hline
+\end{DoxyParams}
+detect collision hitbox class 
+\begin{DoxyParams}{Parameters}
+{\em entity1} & is the first hitbox \\
+\hline
+{\em entity2} & is the second hitbox \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCollisions_aa0ec7eb6cddec80175aee795cf647f11}\label{classCollisions_aa0ec7eb6cddec80175aee795cf647f11}} 
+\index{Collisions@{Collisions}!wallCollision@{wallCollision}}
+\index{wallCollision@{wallCollision}!Collisions@{Collisions}}
+\doxysubsubsection{\texorpdfstring{wallCollision()}{wallCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Collisions\+::wall\+Collision (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classEnemy}{Enemy}} $\ast$ $>$ \&}]{p,  }\item[{const std\+::vector$<$ SDL\+\_\+\+Rect $>$ \&}]{wall }\end{DoxyParamCaption})}
+
+wall collision enemy
+
+wall collision loop for enemies to call c.\+wall\+Collision(p, wall); originally intended as a one method solution for player and enemy, but incompatible types 
+\begin{DoxyParams}{Parameters}
+{\em p} & vector of player or vector of enemy \\
+\hline
+{\em wall} & vector of all wall rects \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCollisions_ab764161b0e5b26da105deeacd060507a}\label{classCollisions_ab764161b0e5b26da105deeacd060507a}} 
+\index{Collisions@{Collisions}!wallCollision@{wallCollision}}
+\index{wallCollision@{wallCollision}!Collisions@{Collisions}}
+\doxysubsubsection{\texorpdfstring{wallCollision()}{wallCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Collisions\+::wall\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} \&}]{p,  }\item[{const std\+::vector$<$ SDL\+\_\+\+Rect $>$ \&}]{wall,  }\item[{\mbox{\hyperlink{classInput}{Input}} \&}]{in }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classPlayer}{Player}} Wall collisions 
+\begin{DoxyParams}{Parameters}
+{\em p} & player \\
+\hline
+{\em wall} & all walls from game \\
+\hline
+{\em in} & player input \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Collisions.\+hpp\item 
+Collisions.\+cpp\end{DoxyCompactItemize}

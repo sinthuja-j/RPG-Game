@@ -1,0 +1,154 @@
+\hypertarget{classHealthPotion}{}\doxysection{Health\+Potion Class Reference}
+\label{classHealthPotion}\index{HealthPotion@{HealthPotion}}
+
+
+{\ttfamily \#include $<$Health\+Potion.\+hpp$>$}
+
+
+
+Inheritance diagram for Health\+Potion\+:
+% FIG 0
+
+
+Collaboration diagram for Health\+Potion\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHealthPotion_a63a0f1f006eb58db452764c7cbe24be9}{Health\+Potion}} (string name, string description, int x, int y, bool active, int hb\+Width, int hb\+Height, int restore\+Power, \mbox{\hyperlink{classGraphics}{Graphics}} $\ast$graphics)
+\item 
+void \mbox{\hyperlink{classHealthPotion_adef2f533519c286e6ddc34dedb0adbc9}{use}} () override
+\begin{DoxyCompactList}\small\item\em Prototype for using item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHealthPotion_abe960276faa2ff566feb6edead5a0a54}{absorb}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for absorb. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHealthPotion_a6f8dfa565bcaa309d147877d8251fec1}{get\+Restore\+Power}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classHealthPotion}{Health\+Potion}} Class extends item Purpose\+: used for \mbox{\hyperlink{classHealthPotion}{Health\+Potion}} items, defines attributes, useful methods for health\+Potion interaction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHealthPotion_a44838dbe6a13159af803f6935396e85c}{set\+Restore\+Power}} (int x)
+\begin{DoxyCompactList}\small\item\em Setter for health\+Potion restore\+Power. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classHealthPotion_a7d3c5604eb1c7889800600cdd5cd26f8}{On\+Collide\+Description}} (const SDL\+\_\+\+Rect \&player)
+\begin{DoxyCompactList}\small\item\em Prototype for collision with player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHealthPotion_a8c224fb92e15029fa00097c779d4ac42}\label{classHealthPotion_a8c224fb92e15029fa00097c779d4ac42}} 
+int {\bfseries restore\+Power}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Header file for \mbox{\hyperlink{classHealthPotion}{Health\+Potion}} class \mbox{\hyperlink{classHealthPotion}{Health\+Potion}} class prototype 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHealthPotion_a63a0f1f006eb58db452764c7cbe24be9}\label{classHealthPotion_a63a0f1f006eb58db452764c7cbe24be9}} 
+\index{HealthPotion@{HealthPotion}!HealthPotion@{HealthPotion}}
+\index{HealthPotion@{HealthPotion}!HealthPotion@{HealthPotion}}
+\doxysubsubsection{\texorpdfstring{HealthPotion()}{HealthPotion()}}
+{\footnotesize\ttfamily Health\+Potion\+::\+Health\+Potion (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{description,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{bool}]{active,  }\item[{int}]{hb\+Width,  }\item[{int}]{hb\+Height,  }\item[{int}]{restore\+Power,  }\item[{\mbox{\hyperlink{classGraphics}{Graphics}} $\ast$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prototype for constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of potion \\
+\hline
+{\em description} & description of potion \\
+\hline
+{\em x} & x position of potion \\
+\hline
+{\em y} & y position of potion \\
+\hline
+{\em active} & is potion active? \\
+\hline
+{\em restore\+Power} & amount the potion can heal player \\
+\hline
+{\em graphics} & graphics renderer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHealthPotion_abe960276faa2ff566feb6edead5a0a54}\label{classHealthPotion_abe960276faa2ff566feb6edead5a0a54}} 
+\index{HealthPotion@{HealthPotion}!absorb@{absorb}}
+\index{absorb@{absorb}!HealthPotion@{HealthPotion}}
+\doxysubsubsection{\texorpdfstring{absorb()}{absorb()}}
+{\footnotesize\ttfamily void Health\+Potion\+::absorb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for absorb. 
+
+Prototype for absorb \mbox{\Hypertarget{classHealthPotion_a6f8dfa565bcaa309d147877d8251fec1}\label{classHealthPotion_a6f8dfa565bcaa309d147877d8251fec1}} 
+\index{HealthPotion@{HealthPotion}!getRestorePower@{getRestorePower}}
+\index{getRestorePower@{getRestorePower}!HealthPotion@{HealthPotion}}
+\doxysubsubsection{\texorpdfstring{getRestorePower()}{getRestorePower()}}
+{\footnotesize\ttfamily int Health\+Potion\+::get\+Restore\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classHealthPotion}{Health\+Potion}} Class extends item Purpose\+: used for \mbox{\hyperlink{classHealthPotion}{Health\+Potion}} items, defines attributes, useful methods for health\+Potion interaction. 
+
+Prototype getters and setters for restore\+Power 
+\begin{DoxyParams}{Parameters}
+{\em x} & health restoring value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Chase Getter for health\+Potion restore\+Power 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+restore\+Power int value for health increase upon use 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHealthPotion_a7d3c5604eb1c7889800600cdd5cd26f8}\label{classHealthPotion_a7d3c5604eb1c7889800600cdd5cd26f8}} 
+\index{HealthPotion@{HealthPotion}!OnCollideDescription@{OnCollideDescription}}
+\index{OnCollideDescription@{OnCollideDescription}!HealthPotion@{HealthPotion}}
+\doxysubsubsection{\texorpdfstring{OnCollideDescription()}{OnCollideDescription()}}
+{\footnotesize\ttfamily std\+::string Health\+Potion\+::\+On\+Collide\+Description (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Rect \&}]{player }\end{DoxyParamCaption})}
+
+
+
+Prototype for collision with player. 
+
+Prototype for on collide description TODO\+: unimplemented
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & SDL\+\_\+\+Rect \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHealthPotion_a44838dbe6a13159af803f6935396e85c}\label{classHealthPotion_a44838dbe6a13159af803f6935396e85c}} 
+\index{HealthPotion@{HealthPotion}!setRestorePower@{setRestorePower}}
+\index{setRestorePower@{setRestorePower}!HealthPotion@{HealthPotion}}
+\doxysubsubsection{\texorpdfstring{setRestorePower()}{setRestorePower()}}
+{\footnotesize\ttfamily void Health\+Potion\+::set\+Restore\+Power (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Setter for health\+Potion restore\+Power. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em restore\+Power} & int value for health increase upon use \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHealthPotion_adef2f533519c286e6ddc34dedb0adbc9}\label{classHealthPotion_adef2f533519c286e6ddc34dedb0adbc9}} 
+\index{HealthPotion@{HealthPotion}!use@{use}}
+\index{use@{use}!HealthPotion@{HealthPotion}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void Health\+Potion\+::use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Prototype for using item. 
+
+Use \mbox{\hyperlink{classItem}{Item}}. 
+
+Reimplemented from \mbox{\hyperlink{classItem_aad2a6437f8ac3add1cd002d0e53c34c3}{Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Health\+Potion.\+hpp\item 
+Health\+Potion.\+cpp\end{DoxyCompactItemize}

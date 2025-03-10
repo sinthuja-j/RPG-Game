@@ -1,0 +1,203 @@
+\hypertarget{classTile}{}\doxysection{Tile Class Reference}
+\label{classTile}\index{Tile@{Tile}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTile_a85a25f464840c5972d2bdcc4cf80e711}{Tile}} (unsigned int tile\+Info, int tlX, int tlY)
+\begin{DoxyCompactList}\small\item\em Modular \mbox{\hyperlink{classTile}{Tile}} class Encompasses Wall geometry loaded from Level file, enemy spawns and item spawns. Loads one unsigned integer from the level file \char`\"{}metadata\char`\"{} which encodes all the data. The unsigned int is a 16 bit unsigned int. Designed to be modular and flexible for expanding, which means that there are some functions not fully utilized Metadata format UINT FORMAT 0 0 0 0 1 0 0 0 0 0 1 1 0 0 0 0 i i i i i t t t n n n e w w w w Wall Direction\+: W S E N u = unassigned e = enemy spawn w = wall n = num of enemies up to 7 in 1 tile i = item on tile 5 bit numerical item ID t = enemy type 3 bit \mbox{\hyperlink{classEnemy}{Enemy}} ID unused due to time constraints. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTile_a709fff3e4c28f109170f25314b2d3713}{set\+\_\+wall}} (unsigned int w)
+\item 
+unsigned int \mbox{\hyperlink{classTile_adac6e33a0911153a3ab4b97026cacfed}{get\+\_\+data}} ()
+\item 
+unsigned int \mbox{\hyperlink{classTile_ad01d550909712f00f1c03b297bd8e17d}{get\+\_\+item\+\_\+data}} ()
+\item 
+void \mbox{\hyperlink{classTile_afa3d10285482f9a55078cc0bf48614df}{set\+\_\+data}} (unsigned int md)
+\item 
+int \mbox{\hyperlink{classTile_a25b90e07fd9cdaba1df3ac2a9b6d032b}{getX}} ()
+\item 
+int \mbox{\hyperlink{classTile_acf97bff4aac74cc8d7e09bc8ca5afa68}{getY}} ()
+\item 
+int \mbox{\hyperlink{classTile_a11e9354ffe80f6482eabe4ca3b829a05}{get\+Thickness}} ()
+\item 
+int \mbox{\hyperlink{classTile_a39044ed908dec03e693985f91da11c4a}{get\+Length}} ()
+\item 
+std\+::vector$<$ SDL\+\_\+\+Rect $>$ \mbox{\hyperlink{classTile_a21eb4eb9b95053dfc5e80927878f1c49}{get\+\_\+wallhb}} ()
+\item 
+void \mbox{\hyperlink{classTile_ae1040668b3e47dbe4e8bff9878615b9f}{tile\+\_\+draw}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\item 
+void \mbox{\hyperlink{classTile_a99113584f1f079634260d1047b4595c0}{spawn\+Enemy}} (std\+::vector$<$ \mbox{\hyperlink{classEnemy}{Enemy}} $\ast$ $>$ \&e\+List)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTile_aa286e1eed6b57b52a313a33da97188f6}\label{classTile_aa286e1eed6b57b52a313a33da97188f6}} 
+unsigned int {\bfseries metadata} = 0
+\item 
+\mbox{\Hypertarget{classTile_ad385c7adb646d8c995d2ecf97b60a5f1}\label{classTile_ad385c7adb646d8c995d2ecf97b60a5f1}} 
+unsigned int {\bfseries num\+Enemies} = 0
+\item 
+\mbox{\Hypertarget{classTile_a207b5d8528c2947e65954ae994acdf05}\label{classTile_a207b5d8528c2947e65954ae994acdf05}} 
+unsigned int {\bfseries item\+ID} = 0
+\item 
+\mbox{\Hypertarget{classTile_a085bddb055e4e69eaba442883e039d95}\label{classTile_a085bddb055e4e69eaba442883e039d95}} 
+bool {\bfseries is\+Spawn}
+\item 
+\mbox{\Hypertarget{classTile_a47b5eb2072d4b1978923a480043899c9}\label{classTile_a47b5eb2072d4b1978923a480043899c9}} 
+int {\bfseries x}
+\item 
+\mbox{\Hypertarget{classTile_a2d87d8813151af6bbd60811964f047a8}\label{classTile_a2d87d8813151af6bbd60811964f047a8}} 
+int {\bfseries y}
+\item 
+\mbox{\Hypertarget{classTile_ad6a46c1711a88e9a52fc30de74d78c59}\label{classTile_ad6a46c1711a88e9a52fc30de74d78c59}} 
+int {\bfseries spawn\+Num}
+\item 
+\mbox{\Hypertarget{classTile_ac7197320e99e8960dd0a9b5e94f46379}\label{classTile_ac7197320e99e8960dd0a9b5e94f46379}} 
+std\+::vector$<$ SDL\+\_\+\+Rect $>$ {\bfseries hboxes}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTile_a85a25f464840c5972d2bdcc4cf80e711}\label{classTile_a85a25f464840c5972d2bdcc4cf80e711}} 
+\index{Tile@{Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{Tile()}{Tile()}}
+{\footnotesize\ttfamily Tile\+::\+Tile (\begin{DoxyParamCaption}\item[{unsigned int}]{tile\+Info,  }\item[{int}]{tlX,  }\item[{int}]{tlY }\end{DoxyParamCaption})}
+
+
+
+Modular \mbox{\hyperlink{classTile}{Tile}} class Encompasses Wall geometry loaded from Level file, enemy spawns and item spawns. Loads one unsigned integer from the level file \char`\"{}metadata\char`\"{} which encodes all the data. The unsigned int is a 16 bit unsigned int. Designed to be modular and flexible for expanding, which means that there are some functions not fully utilized Metadata format UINT FORMAT 0 0 0 0 1 0 0 0 0 0 1 1 0 0 0 0 i i i i i t t t n n n e w w w w Wall Direction\+: W S E N u = unassigned e = enemy spawn w = wall n = num of enemies up to 7 in 1 tile i = item on tile 5 bit numerical item ID t = enemy type 3 bit \mbox{\hyperlink{classEnemy}{Enemy}} ID unused due to time constraints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile\+Ptr} & pointer to tile object void pointer because unsure what structure we want to pass thru \\
+\hline
+{\em tlX} & top left X \\
+\hline
+{\em tlY} & top left Y because sdl draws from TL, and we don\textquotesingle{}t want centered behaviour in thiss\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Alan Kuang (akuang4) Constructor 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em tile\+Info} & unsigned int \char`\"{}metadata\char`\"{} from save file \\
+\hline
+{\em tlX} & tile X top left corner position \\
+\hline
+{\em tlY} & tile Y top left corner position \\
+\hline
+\end{DoxyParams}
+Draws walls
+
+westwall
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTile_adac6e33a0911153a3ab4b97026cacfed}\label{classTile_adac6e33a0911153a3ab4b97026cacfed}} 
+\index{Tile@{Tile}!get\_data@{get\_data}}
+\index{get\_data@{get\_data}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{get\_data()}{get\_data()}}
+{\footnotesize\ttfamily unsigned int Tile\+::get\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+getter for metadata
+
+Metadata getter \mbox{\Hypertarget{classTile_ad01d550909712f00f1c03b297bd8e17d}\label{classTile_ad01d550909712f00f1c03b297bd8e17d}} 
+\index{Tile@{Tile}!get\_item\_data@{get\_item\_data}}
+\index{get\_item\_data@{get\_item\_data}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{get\_item\_data()}{get\_item\_data()}}
+{\footnotesize\ttfamily unsigned int Tile\+::get\+\_\+item\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+gets item metadata
+
+\mbox{\hyperlink{classItem}{Item}} metadata getter \mbox{\Hypertarget{classTile_a21eb4eb9b95053dfc5e80927878f1c49}\label{classTile_a21eb4eb9b95053dfc5e80927878f1c49}} 
+\index{Tile@{Tile}!get\_wallhb@{get\_wallhb}}
+\index{get\_wallhb@{get\_wallhb}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{get\_wallhb()}{get\_wallhb()}}
+{\footnotesize\ttfamily std\+::vector$<$ SDL\+\_\+\+Rect $>$ Tile\+::get\+\_\+wallhb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Wall getter Gets all wall hitboxes \mbox{\Hypertarget{classTile_a39044ed908dec03e693985f91da11c4a}\label{classTile_a39044ed908dec03e693985f91da11c4a}} 
+\index{Tile@{Tile}!getLength@{getLength}}
+\index{getLength@{getLength}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily int Tile\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for length \mbox{\Hypertarget{classTile_a11e9354ffe80f6482eabe4ca3b829a05}\label{classTile_a11e9354ffe80f6482eabe4ca3b829a05}} 
+\index{Tile@{Tile}!getThickness@{getThickness}}
+\index{getThickness@{getThickness}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{getThickness()}{getThickness()}}
+{\footnotesize\ttfamily int Tile\+::get\+Thickness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for thickness \mbox{\Hypertarget{classTile_a25b90e07fd9cdaba1df3ac2a9b6d032b}\label{classTile_a25b90e07fd9cdaba1df3ac2a9b6d032b}} 
+\index{Tile@{Tile}!getX@{getX}}
+\index{getX@{getX}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int Tile\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for tile top left corner X \mbox{\Hypertarget{classTile_acf97bff4aac74cc8d7e09bc8ca5afa68}\label{classTile_acf97bff4aac74cc8d7e09bc8ca5afa68}} 
+\index{Tile@{Tile}!getY@{getY}}
+\index{getY@{getY}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int Tile\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for tile top left corner Y \mbox{\Hypertarget{classTile_afa3d10285482f9a55078cc0bf48614df}\label{classTile_afa3d10285482f9a55078cc0bf48614df}} 
+\index{Tile@{Tile}!set\_data@{set\_data}}
+\index{set\_data@{set\_data}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{set\_data()}{set\_data()}}
+{\footnotesize\ttfamily void Tile\+::set\+\_\+data (\begin{DoxyParamCaption}\item[{unsigned int}]{md }\end{DoxyParamCaption})}
+
+setter for metadata for Level Editor 
+\begin{DoxyParams}{Parameters}
+{\em md} & metadata\\
+\hline
+\end{DoxyParams}
+Setter for metadata Intended for scrapped level editor 
+\begin{DoxyParams}{Parameters}
+{\em md} & 16 bit unsigned integer in the specified format \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTile_a709fff3e4c28f109170f25314b2d3713}\label{classTile_a709fff3e4c28f109170f25314b2d3713}} 
+\index{Tile@{Tile}!set\_wall@{set\_wall}}
+\index{set\_wall@{set\_wall}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{set\_wall()}{set\_wall()}}
+{\footnotesize\ttfamily void Tile\+::set\+\_\+wall (\begin{DoxyParamCaption}\item[{unsigned int}]{w }\end{DoxyParamCaption})}
+
+wall controls Setters and getters for wall value 
+\begin{DoxyParams}{Parameters}
+{\em w} & bitwise representation of wall\\
+\hline
+\end{DoxyParams}
+Wall setter 
+\begin{DoxyParams}{Parameters}
+{\em w} & unsigned 4 bit int representing desired wall configuration \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTile_a99113584f1f079634260d1047b4595c0}\label{classTile_a99113584f1f079634260d1047b4595c0}} 
+\index{Tile@{Tile}!spawnEnemy@{spawnEnemy}}
+\index{spawnEnemy@{spawnEnemy}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{spawnEnemy()}{spawnEnemy()}}
+{\footnotesize\ttfamily void Tile\+::spawn\+Enemy (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classEnemy}{Enemy}} $\ast$ $>$ \&}]{e\+List }\end{DoxyParamCaption})}
+
+Spawns enemy into enemies container
+
+\mbox{\hyperlink{classEnemy}{Enemy}} spawner 8 enemies can spawn from a tile MAX bitwise 111 (7) = 8 enemies (MAX) bitwise 000 (0) = 1 enemy (MIN) 
+\begin{DoxyParams}{Parameters}
+{\em e\+List} & enemy list from game loop \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTile_ae1040668b3e47dbe4e8bff9878615b9f}\label{classTile_ae1040668b3e47dbe4e8bff9878615b9f}} 
+\index{Tile@{Tile}!tile\_draw@{tile\_draw}}
+\index{tile\_draw@{tile\_draw}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{tile\_draw()}{tile\_draw()}}
+{\footnotesize\ttfamily void Tile\+::tile\+\_\+draw (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classTile}{Tile}} Wall draw function Testing function 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & renderer for screen \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tile.\+hpp\item 
+Tile.\+cpp\end{DoxyCompactItemize}

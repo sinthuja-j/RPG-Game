@@ -1,0 +1,411 @@
+\hypertarget{classEnemy}{}\doxysection{Enemy Class Reference}
+\label{classEnemy}\index{Enemy@{Enemy}}
+
+
+{\ttfamily \#include $<$Enemy.\+hpp$>$}
+
+
+
+Inheritance diagram for Enemy\+:
+% FIG 0
+
+
+Collaboration diagram for Enemy\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEnemy_a5bc3c8a28d3eb8375771b8845bd2fa58}{Enemy}} (int posX, int posY, int health, int damage, int hitbox\+Wid, int hitbox\+Ht, char enemy\+Dir, bool \+\_\+is\+Dead, Uint32 death\+Time)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classEnemy}{Enemy}} class file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEnemy_ac0eec4755e28c02688065f9657150ac3}{$\sim$\+Enemy}} ()
+\item 
+int \mbox{\hyperlink{classEnemy_a46341636350ca2bc6aac929b2a84f215}{get\+Health}} ()
+\begin{DoxyCompactList}\small\item\em Getter for enemy health value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_a48f9331e93449f27c8d6374c75c81363}{set\+Health}} (int health)
+\begin{DoxyCompactList}\small\item\em Setter for enemy health value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEnemy_a7d36994bba593bb623e943f9264f901b}{get\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em Getter for damage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_a7de212ee3b9a29ae04b7cf67614d62a4}{set\+Damage}} (int damage)
+\begin{DoxyCompactList}\small\item\em Setter for damage. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classEnemy_aa952c85f92105114c909f7978891fcc1}{get\+Enemy\+Dir}} ()
+\begin{DoxyCompactList}\small\item\em Getter for enemy dir. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_a01ab65e8bb8f41917556fac252b11c0a}{set\+Enemy\+Dir}} (char enemy\+Dir)
+\begin{DoxyCompactList}\small\item\em Setter for enemy dir. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEnemy_a1b4ed45cf1ba009114ef9043b9d93d01}{get\+PosX}} ()
+\begin{DoxyCompactList}\small\item\em Getter for xpos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_a8b982d2db1a3c8d40af40a0b990533c3}{set\+PosX}} (int posX)
+\begin{DoxyCompactList}\small\item\em Setter for xpos. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEnemy_a9f5d15d7c623a4a8a636a54af9466046}{get\+PosY}} ()
+\begin{DoxyCompactList}\small\item\em Getter for ypos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_aa052eb7b6403aa2a52f35c820ddd8631}{set\+PosY}} (int posY)
+\begin{DoxyCompactList}\small\item\em Setter for ypos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_a90e8a786dcd44c6d13cbf404084dc6d7}{move}} (\mbox{\hyperlink{classPlayer}{Player}} \&player)
+\begin{DoxyCompactList}\small\item\em Moves enemy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_a3c4bb920b677a8bf8f6315f1f6e2f90e}{on\+Death}} (bool dead)
+\begin{DoxyCompactList}\small\item\em used when enemy is killed, sets \+\_\+is\+Dead to true, gets death\+Time used for death animation \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEnemy_a038e636d16b708f92627348a36750702}{is\+Dead}} ()
+\begin{DoxyCompactList}\small\item\em gets value of \+\_\+is\+Dead \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_a6935cee192887c154df147b3b8b2af18}{set\+Dead}} (bool dead)
+\begin{DoxyCompactList}\small\item\em setter for \+\_\+is\+Dead \end{DoxyCompactList}\item 
+Uint32 \mbox{\hyperlink{classEnemy_a090d608b53c0a469cb51f93e310424f6}{get\+Death\+Time}} ()
+\begin{DoxyCompactList}\small\item\em gets enemy death time \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_a1d54c95ed0170521f06d33cadb3998a2}{size\+Ehbox}} (int hitbox\+Wid, int hitbox\+Ht)
+\begin{DoxyCompactList}\small\item\em used for hitbox size \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_a737e49f35a17c642b2399fad4d9cd640}{update\+Ehbox}} ()
+\begin{DoxyCompactList}\small\item\em updates the hitbox \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classEnemy_ae6fccf4d45f4e0ba6d37a5e94126a74d}{get\+Ehbox}} ()
+\begin{DoxyCompactList}\small\item\em getter for hitbox \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEnemy_a4969f2e5372ae6840aba5cd0b8059a0a}\label{classEnemy_a4969f2e5372ae6840aba5cd0b8059a0a}} 
+int {\bfseries damage}
+\item 
+\mbox{\Hypertarget{classEnemy_ab11f86d54e1d42721157c41e7be881e0}\label{classEnemy_ab11f86d54e1d42721157c41e7be881e0}} 
+int {\bfseries enemy\+Dir}
+\item 
+\mbox{\Hypertarget{classEnemy_adb61db5fbfeebd961e09e962158ebeef}\label{classEnemy_adb61db5fbfeebd961e09e962158ebeef}} 
+bool {\bfseries \+\_\+is\+Dead}
+\item 
+\mbox{\Hypertarget{classEnemy_ad4ebd380e54d24b48e656bc99b9670d9}\label{classEnemy_ad4ebd380e54d24b48e656bc99b9670d9}} 
+Uint32 {\bfseries death\+Time}
+\item 
+\mbox{\Hypertarget{classEnemy_ae60d0dbfd478d3032ad2440dc6f049d5}\label{classEnemy_ae60d0dbfd478d3032ad2440dc6f049d5}} 
+SDL\+\_\+\+Rect {\bfseries ehbox}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classEnemy}{Enemy}} header file \mbox{\hyperlink{classEnemy}{Enemy}} class prototype Subclass of player 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEnemy_a5bc3c8a28d3eb8375771b8845bd2fa58}\label{classEnemy_a5bc3c8a28d3eb8375771b8845bd2fa58}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{int}]{posX,  }\item[{int}]{posY,  }\item[{int}]{health,  }\item[{int}]{damage,  }\item[{int}]{hitbox\+Wid,  }\item[{int}]{hitbox\+Ht,  }\item[{char}]{enemy\+Dir,  }\item[{bool}]{\+\_\+is\+Dead,  }\item[{Uint32}]{death\+Time }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classEnemy}{Enemy}} class file. 
+
+Constructor prototype
+
+This class is used for enemy objects within the game, it defines all the attributes of what makes an enemy from health, positioning, hitboxes etc. This class ensures modularity and makes it easy to create and render enemies from within the game class.
+
+\mbox{\hyperlink{classEnemy}{Enemy}} Constructor 
+\begin{DoxyParams}{Parameters}
+{\em posX} & and posY represent position on a map \\
+\hline
+{\em health} & represent enemy health \\
+\hline
+{\em damage} & represent damage enemy does to player on hit \\
+\hline
+{\em hitbox\+Wid} & represents the hitbox width of the enemy \\
+\hline
+{\em hitbox\+Ht} & represents the hitbox height of the enemy \\
+\hline
+{\em enemy\+Dir} & char representation of the enemy direction \\
+\hline
+{\em \+\_\+is\+Dead} & bool representing whether or not the enemy is dead \\
+\hline
+{\em death\+Time} & death timer used for death animation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_ac0eec4755e28c02688065f9657150ac3}\label{classEnemy_ac0eec4755e28c02688065f9657150ac3}} 
+\index{Enemy@{Enemy}!````~Enemy@{$\sim$Enemy}}
+\index{````~Enemy@{$\sim$Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{$\sim$Enemy()}{~Enemy()}}
+{\footnotesize\ttfamily Enemy\+::$\sim$\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor prototype 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEnemy_a7d36994bba593bb623e943f9264f901b}\label{classEnemy_a7d36994bba593bb623e943f9264f901b}} 
+\index{Enemy@{Enemy}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily int Enemy\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for damage. 
+
+Prototype getter for damage
+
+\begin{DoxyReturn}{Returns}
+damage int value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_a090d608b53c0a469cb51f93e310424f6}\label{classEnemy_a090d608b53c0a469cb51f93e310424f6}} 
+\index{Enemy@{Enemy}!getDeathTime@{getDeathTime}}
+\index{getDeathTime@{getDeathTime}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getDeathTime()}{getDeathTime()}}
+{\footnotesize\ttfamily Uint32 Enemy\+::get\+Death\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets enemy death time 
+
+\begin{DoxyReturn}{Returns}
+death\+Time Uint32 for when enemy dies, dead\+Time used to hold a specific image for set amount of time until it disappears when enemy dies and stops rendering 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_ae6fccf4d45f4e0ba6d37a5e94126a74d}\label{classEnemy_ae6fccf4d45f4e0ba6d37a5e94126a74d}} 
+\index{Enemy@{Enemy}!getEhbox@{getEhbox}}
+\index{getEhbox@{getEhbox}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getEhbox()}{getEhbox()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Enemy\+::get\+Ehbox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter for hitbox 
+
+getter prototype for get\+Ehbox
+
+\begin{DoxyReturn}{Returns}
+pl\+Hbox 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_aa952c85f92105114c909f7978891fcc1}\label{classEnemy_aa952c85f92105114c909f7978891fcc1}} 
+\index{Enemy@{Enemy}!getEnemyDir@{getEnemyDir}}
+\index{getEnemyDir@{getEnemyDir}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getEnemyDir()}{getEnemyDir()}}
+{\footnotesize\ttfamily char Enemy\+::get\+Enemy\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for enemy dir. 
+
+Prototype setters and getters for enemy direction?
+
+\begin{DoxyReturn}{Returns}
+enemydir char 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_a46341636350ca2bc6aac929b2a84f215}\label{classEnemy_a46341636350ca2bc6aac929b2a84f215}} 
+\index{Enemy@{Enemy}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily int Enemy\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for enemy health value. 
+
+Prototype for getting health value
+
+\begin{DoxyReturn}{Returns}
+health int value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_a1b4ed45cf1ba009114ef9043b9d93d01}\label{classEnemy_a1b4ed45cf1ba009114ef9043b9d93d01}} 
+\index{Enemy@{Enemy}!getPosX@{getPosX}}
+\index{getPosX@{getPosX}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getPosX()}{getPosX()}}
+{\footnotesize\ttfamily int Enemy\+::get\+PosX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for xpos. 
+
+Prototype setters and getters for X and Y position
+
+\begin{DoxyReturn}{Returns}
+x int value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_a9f5d15d7c623a4a8a636a54af9466046}\label{classEnemy_a9f5d15d7c623a4a8a636a54af9466046}} 
+\index{Enemy@{Enemy}!getPosY@{getPosY}}
+\index{getPosY@{getPosY}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getPosY()}{getPosY()}}
+{\footnotesize\ttfamily int Enemy\+::get\+PosY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for ypos. 
+
+\begin{DoxyReturn}{Returns}
+y int value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_a038e636d16b708f92627348a36750702}\label{classEnemy_a038e636d16b708f92627348a36750702}} 
+\index{Enemy@{Enemy}!isDead@{isDead}}
+\index{isDead@{isDead}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
+{\footnotesize\ttfamily bool Enemy\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets value of \+\_\+is\+Dead 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+is\+Dead 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_a90e8a786dcd44c6d13cbf404084dc6d7}\label{classEnemy_a90e8a786dcd44c6d13cbf404084dc6d7}} 
+\index{Enemy@{Enemy}!move@{move}}
+\index{move@{move}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Enemy\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} \&}]{player }\end{DoxyParamCaption})}
+
+
+
+Moves enemy. 
+
+Prototype for enemy movement 
+\begin{DoxyParams}{Parameters}
+{\em player} & so the enemy moves towards player\\
+\hline
+{\em player} & a \mbox{\hyperlink{classPlayer}{Player}} type object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_a3c4bb920b677a8bf8f6315f1f6e2f90e}\label{classEnemy_a3c4bb920b677a8bf8f6315f1f6e2f90e}} 
+\index{Enemy@{Enemy}!onDeath@{onDeath}}
+\index{onDeath@{onDeath}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{onDeath()}{onDeath()}}
+{\footnotesize\ttfamily void Enemy\+::on\+Death (\begin{DoxyParamCaption}\item[{bool}]{dead }\end{DoxyParamCaption})}
+
+
+
+used when enemy is killed, sets \+\_\+is\+Dead to true, gets death\+Time used for death animation 
+
+Prototype for enemy death
+
+
+\begin{DoxyParams}{Parameters}
+{\em dead} & bool used to represent whether enemy is dead \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_a7de212ee3b9a29ae04b7cf67614d62a4}\label{classEnemy_a7de212ee3b9a29ae04b7cf67614d62a4}} 
+\index{Enemy@{Enemy}!setDamage@{setDamage}}
+\index{setDamage@{setDamage}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setDamage()}{setDamage()}}
+{\footnotesize\ttfamily void Enemy\+::set\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
+
+
+
+Setter for damage. 
+
+damage setter prototype 
+\begin{DoxyParams}{Parameters}
+{\em damage} & int\\
+\hline
+{\em damage} & int value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_a6935cee192887c154df147b3b8b2af18}\label{classEnemy_a6935cee192887c154df147b3b8b2af18}} 
+\index{Enemy@{Enemy}!setDead@{setDead}}
+\index{setDead@{setDead}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setDead()}{setDead()}}
+{\footnotesize\ttfamily void Enemy\+::set\+Dead (\begin{DoxyParamCaption}\item[{bool}]{dead }\end{DoxyParamCaption})}
+
+
+
+setter for \+\_\+is\+Dead 
+
+Prototype setter for \+\_\+is\+Dead 
+\begin{DoxyParams}{Parameters}
+{\em dead} & bool for dead value\\
+\hline
+{\em dead} & bool for whether enemy is dead \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_a01ab65e8bb8f41917556fac252b11c0a}\label{classEnemy_a01ab65e8bb8f41917556fac252b11c0a}} 
+\index{Enemy@{Enemy}!setEnemyDir@{setEnemyDir}}
+\index{setEnemyDir@{setEnemyDir}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setEnemyDir()}{setEnemyDir()}}
+{\footnotesize\ttfamily void Enemy\+::set\+Enemy\+Dir (\begin{DoxyParamCaption}\item[{char}]{enemy\+Dir }\end{DoxyParamCaption})}
+
+
+
+Setter for enemy dir. 
+
+Prototype setter for enemy\+Dir 
+\begin{DoxyParams}{Parameters}
+{\em enemy\+Dir} & char\\
+\hline
+{\em enemydir} & char \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_a48f9331e93449f27c8d6374c75c81363}\label{classEnemy_a48f9331e93449f27c8d6374c75c81363}} 
+\index{Enemy@{Enemy}!setHealth@{setHealth}}
+\index{setHealth@{setHealth}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setHealth()}{setHealth()}}
+{\footnotesize\ttfamily void Enemy\+::set\+Health (\begin{DoxyParamCaption}\item[{int}]{health }\end{DoxyParamCaption})}
+
+
+
+Setter for enemy health value. 
+
+Prototype for setting health value
+
+
+\begin{DoxyParams}{Parameters}
+{\em health} & int value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_a8b982d2db1a3c8d40af40a0b990533c3}\label{classEnemy_a8b982d2db1a3c8d40af40a0b990533c3}} 
+\index{Enemy@{Enemy}!setPosX@{setPosX}}
+\index{setPosX@{setPosX}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setPosX()}{setPosX()}}
+{\footnotesize\ttfamily void Enemy\+::set\+PosX (\begin{DoxyParamCaption}\item[{int}]{posX }\end{DoxyParamCaption})}
+
+
+
+Setter for xpos. 
+
+Prototype setter for posX 
+\begin{DoxyParams}{Parameters}
+{\em posX} & for x coordinate\\
+\hline
+{\em posX} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_aa052eb7b6403aa2a52f35c820ddd8631}\label{classEnemy_aa052eb7b6403aa2a52f35c820ddd8631}} 
+\index{Enemy@{Enemy}!setPosY@{setPosY}}
+\index{setPosY@{setPosY}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setPosY()}{setPosY()}}
+{\footnotesize\ttfamily void Enemy\+::set\+PosY (\begin{DoxyParamCaption}\item[{int}]{posY }\end{DoxyParamCaption})}
+
+
+
+Setter for ypos. 
+
+Prototype setter for posX 
+\begin{DoxyParams}{Parameters}
+{\em posY} & for y coordinate\\
+\hline
+{\em y} & int value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_a1d54c95ed0170521f06d33cadb3998a2}\label{classEnemy_a1d54c95ed0170521f06d33cadb3998a2}} 
+\index{Enemy@{Enemy}!sizeEhbox@{sizeEhbox}}
+\index{sizeEhbox@{sizeEhbox}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{sizeEhbox()}{sizeEhbox()}}
+{\footnotesize\ttfamily void Enemy\+::size\+Ehbox (\begin{DoxyParamCaption}\item[{int}]{wid,  }\item[{int}]{ht }\end{DoxyParamCaption})}
+
+
+
+used for hitbox size 
+
+Prototype for size\+Ehbox 
+\begin{DoxyParams}{Parameters}
+{\em hitbox\+Wid} & \\
+\hline
+{\em hitbbox\+Ht} & \\
+\hline
+{\em wid} & int value for hitbox width \\
+\hline
+{\em ht} & int value for hitbox height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_a737e49f35a17c642b2399fad4d9cd640}\label{classEnemy_a737e49f35a17c642b2399fad4d9cd640}} 
+\index{Enemy@{Enemy}!updateEhbox@{updateEhbox}}
+\index{updateEhbox@{updateEhbox}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{updateEhbox()}{updateEhbox()}}
+{\footnotesize\ttfamily void Enemy\+::update\+Ehbox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+updates the hitbox 
+
+Prototype for update\+Ehbox 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Enemy.\+hpp\item 
+Enemy.\+cpp\end{DoxyCompactItemize}
