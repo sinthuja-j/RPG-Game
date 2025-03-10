@@ -1,0 +1,432 @@
+\hypertarget{classItem}{}\doxysection{Item Class Reference}
+\label{classItem}\index{Item@{Item}}
+
+
+\mbox{\hyperlink{classItem}{Item}} header file.  
+
+
+
+
+{\ttfamily \#include $<$Item.\+hpp$>$}
+
+
+
+Inheritance diagram for Item\+:
+% FIG 0
+
+
+Collaboration diagram for Item\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classItem_a9b5b0c28635506bfa7c7e47e8c43e19e}{Item}} (string name, string description, int x, int y, bool active, \mbox{\hyperlink{classGraphics}{Graphics}} $\ast$graphics)
+\item 
+\mbox{\hyperlink{classItem_a3092f4edf1b8073225f83b09af32f19b}{Item}} (string name, string description, int x, int y, bool active, int hb\+Width, int hb\+Height, \mbox{\hyperlink{classGraphics}{Graphics}} $\ast$graphics)
+\begin{DoxyCompactList}\small\item\em consturctor \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classItem_aafe99466e68f6b99539f25e4985c1ed7}{get\+Item\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for getting item name. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classItem_a62ed082bcc38f0ac8f3e03f5992416f0}{get\+Information}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for getting information? \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classItem_a6ffeab44f02a8ad6208abab949e331dc}{get\+PosX}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for getters and setters for x and y axes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classItem_a527b4d2db3228357ab9dc7b1c3a8dbfc}{get\+PosY}} ()
+\begin{DoxyCompactList}\small\item\em Getter for position y. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classItem_abe36423196409164cf9ce80e6db50fbc}{get\+Hbox}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for setter and getter for hitbox. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classItem_a3db41b0f83b5ff61699614c5e5840127}{set\+Hbox}} (int hb\+Width, int hb\+Height)
+\begin{DoxyCompactList}\small\item\em Set custom hitbox size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classItem_a56eb2e6b73c97ea46a3bced4a712e6c0}{upd\+Hbox\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for updating hitbox position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classItem_a6e00c07abfeefbc59675629c1bae1a8e}{set\+Item\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Prototype setters for name, description, x, and y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classItem_aabb30c34ac581205c0e450538974f423}{set\+Item\+Description}} (string description)
+\begin{DoxyCompactList}\small\item\em Setter for \mbox{\hyperlink{classItem}{Item}} description. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classItem_ac84987e01f8693fd13d1e6c057f37f50}{set\+PosX}} (int x)
+\begin{DoxyCompactList}\small\item\em Setter for xposition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classItem_a7d8bbd5c80cb786199c224cb95f3ab2a}{set\+PosY}} (int y)
+\begin{DoxyCompactList}\small\item\em Setter for y position. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classItem_aad2a6437f8ac3add1cd002d0e53c34c3}{use}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for using item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classItem_a4c25a9ffb5fddd2edadaa9b169ba9244}{pick\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for pickup and drop item. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classItem_a29eeeafd4e401ce129b417fdfe39586f}\label{classItem_a29eeeafd4e401ce129b417fdfe39586f}} 
+void \mbox{\hyperlink{classItem_a29eeeafd4e401ce129b417fdfe39586f}{drop}} ()
+\begin{DoxyCompactList}\small\item\em Drop item prototype. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classItem_aad4a8d1c0298f5e6addbdd0e6c575a83}{get\+Active}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for setter and getters for item active states. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classItem_ab725cc48e7235f7b8d426cffd666e3fc}{set\+Active}} (bool active)
+\begin{DoxyCompactList}\small\item\em Setter for is\+Active. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classItem_aaecd1a365475c0274cd57e4b2a9ceae3}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for drawing function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classItem_af7a09a8db2072c632d84a992e76408b9}\label{classItem_af7a09a8db2072c632d84a992e76408b9}} 
+string {\bfseries item\+Name}
+\item 
+\mbox{\Hypertarget{classItem_aa8f0f4cd551b7cd4a7cf26a338179a4e}\label{classItem_aa8f0f4cd551b7cd4a7cf26a338179a4e}} 
+string {\bfseries item\+Description}
+\item 
+\mbox{\Hypertarget{classItem_a2b9421745495b110b48d71004030ca28}\label{classItem_a2b9421745495b110b48d71004030ca28}} 
+SDL\+\_\+\+Rect {\bfseries hbox}
+\item 
+\mbox{\Hypertarget{classItem_a077c7a5eb506f9205ac5bd0658a4ef50}\label{classItem_a077c7a5eb506f9205ac5bd0658a4ef50}} 
+int {\bfseries hb\+Wid}
+\item 
+\mbox{\Hypertarget{classItem_aa8f75e5411f50575e83127f9a1053080}\label{classItem_aa8f75e5411f50575e83127f9a1053080}} 
+int {\bfseries hb\+Ht}
+\item 
+\mbox{\Hypertarget{classItem_a96cb116118f276b198c19cbd10442a57}\label{classItem_a96cb116118f276b198c19cbd10442a57}} 
+int {\bfseries posX}
+\item 
+\mbox{\Hypertarget{classItem_a9a20714603110aedef9ece35306ffbff}\label{classItem_a9a20714603110aedef9ece35306ffbff}} 
+int {\bfseries posY}
+\item 
+\mbox{\Hypertarget{classItem_adfb82330036e1b1f8dcc7a8c5df3ad29}\label{classItem_adfb82330036e1b1f8dcc7a8c5df3ad29}} 
+bool {\bfseries is\+Active}
+\item 
+\mbox{\Hypertarget{classItem_a620f979d659214e86dd74cae850a8b29}\label{classItem_a620f979d659214e86dd74cae850a8b29}} 
+bool {\bfseries is\+Picked\+Up}
+\item 
+\mbox{\Hypertarget{classItem_ae181689e5ebc6d320d1bcb7eed6fafd2}\label{classItem_ae181689e5ebc6d320d1bcb7eed6fafd2}} 
+\mbox{\hyperlink{classGraphics}{Graphics}} $\ast$ {\bfseries graphics}
+\item 
+\mbox{\Hypertarget{classItem_a8fc9194144e66e2f0f6e3b85b0d9be59}\label{classItem_a8fc9194144e66e2f0f6e3b85b0d9be59}} 
+SDL\+\_\+\+Rect {\bfseries sprite}
+\item 
+std\+::map$<$ std\+::string, SDL\+\_\+\+Rect $>$ {\bfseries sprite\+Map}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classItem}{Item}} header file. 
+
+\mbox{\hyperlink{classItem}{Item}} class prototype 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classItem_a9b5b0c28635506bfa7c7e47e8c43e19e}\label{classItem_a9b5b0c28635506bfa7c7e47e8c43e19e}} 
+\index{Item@{Item}!Item@{Item}}
+\index{Item@{Item}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{Item()}{Item()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Item\+::\+Item (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{description,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{bool}]{active,  }\item[{\mbox{\hyperlink{classGraphics}{Graphics}} $\ast$}]{graphics }\end{DoxyParamCaption})}
+
+Constructors Prototypes 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of item \\
+\hline
+{\em description} & description of item \\
+\hline
+{\em x} & x position of the item \\
+\hline
+{\em y} & y position of the item \\
+\hline
+{\em active} & is item being used? \\
+\hline
+{\em graphics} & graphics renderer \\
+\hline
+{\em hb\+Width} & hitbox width \\
+\hline
+{\em hb\+Height} & hitbox height\\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{classItem}{Item}} class represents an item This class is extended to different types of items Constructor for item 
+\begin{DoxyParams}{Parameters}
+{\em name} & for identification \\
+\hline
+{\em description} & for information \\
+\hline
+{\em x} & and y for positions \\
+\hline
+{\em active} & if item to be shown \\
+\hline
+{\em graphics} & to use for rendering \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classItem_a3092f4edf1b8073225f83b09af32f19b}\label{classItem_a3092f4edf1b8073225f83b09af32f19b}} 
+\index{Item@{Item}!Item@{Item}}
+\index{Item@{Item}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{Item()}{Item()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Item\+::\+Item (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{description,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{bool}]{active,  }\item[{int}]{hb\+Width,  }\item[{int}]{hb\+Height,  }\item[{\mbox{\hyperlink{classGraphics}{Graphics}} $\ast$}]{graphics }\end{DoxyParamCaption})}
+
+
+
+consturctor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hb\+Width,hb\+Height} & for custom hitbox size \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classItem_aaecd1a365475c0274cd57e4b2a9ceae3}\label{classItem_aaecd1a365475c0274cd57e4b2a9ceae3}} 
+\index{Item@{Item}!draw@{draw}}
+\index{draw@{draw}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Item\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for drawing function. 
+
+Renders sprite For now just fixed sprite for prototype. \mbox{\Hypertarget{classItem_aad4a8d1c0298f5e6addbdd0e6c575a83}\label{classItem_aad4a8d1c0298f5e6addbdd0e6c575a83}} 
+\index{Item@{Item}!getActive@{getActive}}
+\index{getActive@{getActive}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getActive()}{getActive()}}
+{\footnotesize\ttfamily bool Item\+::get\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for setter and getters for item active states. 
+
+Getter for if active.
+
+
+\begin{DoxyParams}{Parameters}
+{\em active} & item use boolean?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classItem_abe36423196409164cf9ce80e6db50fbc}\label{classItem_abe36423196409164cf9ce80e6db50fbc}} 
+\index{Item@{Item}!getHbox@{getHbox}}
+\index{getHbox@{getHbox}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getHbox()}{getHbox()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Item\+::get\+Hbox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for setter and getter for hitbox. 
+
+Getter for hit box.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hb\+Width} & hitbox width \\
+\hline
+{\em hb\+Height} & hitbox height\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Rect 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classItem_a62ed082bcc38f0ac8f3e03f5992416f0}\label{classItem_a62ed082bcc38f0ac8f3e03f5992416f0}} 
+\index{Item@{Item}!getInformation@{getInformation}}
+\index{getInformation@{getInformation}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getInformation()}{getInformation()}}
+{\footnotesize\ttfamily string Item\+::get\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for getting information? 
+
+Getter for description.
+
+\begin{DoxyReturn}{Returns}
+string description 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classItem_aafe99466e68f6b99539f25e4985c1ed7}\label{classItem_aafe99466e68f6b99539f25e4985c1ed7}} 
+\index{Item@{Item}!getItemName@{getItemName}}
+\index{getItemName@{getItemName}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getItemName()}{getItemName()}}
+{\footnotesize\ttfamily string Item\+::get\+Item\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for getting item name. 
+
+Getter for item name.
+
+\begin{DoxyReturn}{Returns}
+string itemname 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classItem_a6ffeab44f02a8ad6208abab949e331dc}\label{classItem_a6ffeab44f02a8ad6208abab949e331dc}} 
+\index{Item@{Item}!getPosX@{getPosX}}
+\index{getPosX@{getPosX}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getPosX()}{getPosX()}}
+{\footnotesize\ttfamily int Item\+::get\+PosX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for getters and setters for x and y axes. 
+
+Getter for position x.
+
+\begin{DoxyReturn}{Returns}
+int x 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classItem_a527b4d2db3228357ab9dc7b1c3a8dbfc}\label{classItem_a527b4d2db3228357ab9dc7b1c3a8dbfc}} 
+\index{Item@{Item}!getPosY@{getPosY}}
+\index{getPosY@{getPosY}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getPosY()}{getPosY()}}
+{\footnotesize\ttfamily int Item\+::get\+PosY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for position y. 
+
+\begin{DoxyReturn}{Returns}
+int y 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classItem_a4c25a9ffb5fddd2edadaa9b169ba9244}\label{classItem_a4c25a9ffb5fddd2edadaa9b169ba9244}} 
+\index{Item@{Item}!pickUp@{pickUp}}
+\index{pickUp@{pickUp}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{pickUp()}{pickUp()}}
+{\footnotesize\ttfamily void Item\+::pick\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for pickup and drop item. 
+
+Pick up item prototype. \mbox{\Hypertarget{classItem_ab725cc48e7235f7b8d426cffd666e3fc}\label{classItem_ab725cc48e7235f7b8d426cffd666e3fc}} 
+\index{Item@{Item}!setActive@{setActive}}
+\index{setActive@{setActive}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{setActive()}{setActive()}}
+{\footnotesize\ttfamily void Item\+::set\+Active (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})}
+
+
+
+Setter for is\+Active. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bool} & value to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classItem_a3db41b0f83b5ff61699614c5e5840127}\label{classItem_a3db41b0f83b5ff61699614c5e5840127}} 
+\index{Item@{Item}!setHbox@{setHbox}}
+\index{setHbox@{setHbox}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{setHbox()}{setHbox()}}
+{\footnotesize\ttfamily void Item\+::set\+Hbox (\begin{DoxyParamCaption}\item[{int}]{hb\+Width,  }\item[{int}]{hb\+Height }\end{DoxyParamCaption})}
+
+
+
+Set custom hitbox size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & and width of hbox \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classItem_aabb30c34ac581205c0e450538974f423}\label{classItem_aabb30c34ac581205c0e450538974f423}} 
+\index{Item@{Item}!setItemDescription@{setItemDescription}}
+\index{setItemDescription@{setItemDescription}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{setItemDescription()}{setItemDescription()}}
+{\footnotesize\ttfamily void Item\+::set\+Item\+Description (\begin{DoxyParamCaption}\item[{string}]{description }\end{DoxyParamCaption})}
+
+
+
+Setter for \mbox{\hyperlink{classItem}{Item}} description. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classItem_a6e00c07abfeefbc59675629c1bae1a8e}\label{classItem_a6e00c07abfeefbc59675629c1bae1a8e}} 
+\index{Item@{Item}!setItemName@{setItemName}}
+\index{setItemName@{setItemName}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{setItemName()}{setItemName()}}
+{\footnotesize\ttfamily void Item\+::set\+Item\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Prototype setters for name, description, x, and y. 
+
+Setter for \mbox{\hyperlink{classItem}{Item}} name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & item name \\
+\hline
+{\em description} & item description \\
+\hline
+{\em x} & x position of item \\
+\hline
+{\em y} & y position of item\\
+\hline
+{\em string} & name to be changed into \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classItem_ac84987e01f8693fd13d1e6c057f37f50}\label{classItem_ac84987e01f8693fd13d1e6c057f37f50}} 
+\index{Item@{Item}!setPosX@{setPosX}}
+\index{setPosX@{setPosX}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{setPosX()}{setPosX()}}
+{\footnotesize\ttfamily void Item\+::set\+PosX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Setter for xposition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & x \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classItem_a7d8bbd5c80cb786199c224cb95f3ab2a}\label{classItem_a7d8bbd5c80cb786199c224cb95f3ab2a}} 
+\index{Item@{Item}!setPosY@{setPosY}}
+\index{setPosY@{setPosY}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{setPosY()}{setPosY()}}
+{\footnotesize\ttfamily void Item\+::set\+PosY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Setter for y position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classItem_a56eb2e6b73c97ea46a3bced4a712e6c0}\label{classItem_a56eb2e6b73c97ea46a3bced4a712e6c0}} 
+\index{Item@{Item}!updHboxPos@{updHboxPos}}
+\index{updHboxPos@{updHboxPos}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{updHboxPos()}{updHboxPos()}}
+{\footnotesize\ttfamily void Item\+::upd\+Hbox\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for updating hitbox position. 
+
+Updates hitbox according to position. \mbox{\Hypertarget{classItem_aad2a6437f8ac3add1cd002d0e53c34c3}\label{classItem_aad2a6437f8ac3add1cd002d0e53c34c3}} 
+\index{Item@{Item}!use@{use}}
+\index{use@{use}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void Item\+::use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Prototype for using item. 
+
+Use \mbox{\hyperlink{classItem}{Item}}. 
+
+Reimplemented in \mbox{\hyperlink{classSword_abe4d83894d18c260236fa81330098fec}{Sword}}, and \mbox{\hyperlink{classHealthPotion_adef2f533519c286e6ddc34dedb0adbc9}{Health\+Potion}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classItem_af60fa248e4f58c6afeb255c1f92f58ab}\label{classItem_af60fa248e4f58c6afeb255c1f92f58ab}} 
+\index{Item@{Item}!spriteMap@{spriteMap}}
+\index{spriteMap@{spriteMap}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{spriteMap}{spriteMap}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, SDL\+\_\+\+Rect$>$ Item\+::sprite\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{            \{\textcolor{stringliteral}{"{}sword"{}}, \{0,0,30,30\}\},}
+\DoxyCodeLine{            \{\textcolor{stringliteral}{"{}shield"{}}, \{30,0,30,30\}\},}
+\DoxyCodeLine{            \{\textcolor{stringliteral}{"{}key"{}}, \{60,0,30,30\}\},}
+\DoxyCodeLine{            \{\textcolor{stringliteral}{"{}healthPotion"{}}, \{0,30,30,30\}\}}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Item.\+hpp\item 
+Item.\+cpp\end{DoxyCompactItemize}

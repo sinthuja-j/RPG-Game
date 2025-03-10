@@ -1,0 +1,564 @@
+\hypertarget{classPlayer}{}\doxysection{Player Class Reference}
+\label{classPlayer}\index{Player@{Player}}
+
+
+\mbox{\hyperlink{classPlayer}{Player}} header file.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+hpp$>$}
+
+
+
+Inheritance diagram for Player\+:
+% FIG 0
+
+
+Collaboration diagram for Player\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer_a7d1676fb8b96e62a9a243e68f9bb99b2}{Player}} (int health=100, int shield=0, int x=400, int y=400)
+\begin{DoxyCompactList}\small\item\em constructor prototype \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer_a749d2c00e1fe0f5c2746f7505a58c062}{$\sim$\+Player}} ()
+\begin{DoxyCompactList}\small\item\em destructor prototype \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlayer_abcb15d249bed9a4ab0ab86b52b0d747a}{get\+Health}} ()
+\begin{DoxyCompactList}\small\item\em Prototypes for setters and getters for player health. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a56c6b3c54757d38abd2034a5ece8e664}{set\+Health}} (int x)
+\begin{DoxyCompactList}\small\item\em Setter for health. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlayer_a50d952b279f1a719314ee0f708d3eaaf}{get\+Shield}} ()
+\begin{DoxyCompactList}\small\item\em Getter for shield. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a0a29dabd9974c0879229ccfdecca699f}{set\+Shield}} (int x)
+\begin{DoxyCompactList}\small\item\em Setter for shield. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPlayer_ac612c5e98a2d6c85b4b797af1c7d102c}{get\+Direction}} ()
+\begin{DoxyCompactList}\small\item\em sprite direction \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_ab2ff568b7344fa57f2ff4b4b13a0582c}{set\+Direction}} (std\+::string dir)
+\begin{DoxyCompactList}\small\item\em setter for sprite direction \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayer_acf3c3d6fd531aa94932fdf3a9d70a8e2}\label{classPlayer_acf3c3d6fd531aa94932fdf3a9d70a8e2}} 
+std\+::string \mbox{\hyperlink{classPlayer_acf3c3d6fd531aa94932fdf3a9d70a8e2}{get\+XDirection}} ()
+\begin{DoxyCompactList}\small\item\em X and Y directions Required for collisions, or else may phase thru walls. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayer_a1f549d68c2545fe812d0f695d393cc65}\label{classPlayer_a1f549d68c2545fe812d0f695d393cc65}} 
+std\+::string {\bfseries get\+YDirection} ()
+\item 
+void \mbox{\hyperlink{classPlayer_a225a3e732b737cb8a9d807f97b7930aa}{move\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Prototyps for player movements. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayer_a6e759d186d9d40609ecf0511e8f50e4c}\label{classPlayer_a6e759d186d9d40609ecf0511e8f50e4c}} 
+void \mbox{\hyperlink{classPlayer_a6e759d186d9d40609ecf0511e8f50e4c}{move\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Moves player down. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayer_ae3bbcf1159bdc059bff1c2513f2505f7}\label{classPlayer_ae3bbcf1159bdc059bff1c2513f2505f7}} 
+void \mbox{\hyperlink{classPlayer_ae3bbcf1159bdc059bff1c2513f2505f7}{move\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Moves player left. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayer_a6a2b68bc4b21d4c4a79a23b498896ec2}\label{classPlayer_a6a2b68bc4b21d4c4a79a23b498896ec2}} 
+void \mbox{\hyperlink{classPlayer_a6a2b68bc4b21d4c4a79a23b498896ec2}{move\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Moves player right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_af1736f8320ea2af20bef3d67d6b3493e}{setX}} (int)
+\begin{DoxyCompactList}\small\item\em Setter for x. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlayer_a66fd07131797bddcc70a547d0d8acbe4}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Getter for x. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_ad81b121309ac97bfade3fcd4f6ab62dd}{setY}} (int)
+\begin{DoxyCompactList}\small\item\em Setter for y. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlayer_ade10b15f0966db5ba7ec24d3691786e6}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Getter for y. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlayer_afea334f478acadd48ede47477e94e9dc}{get\+DrawX}} ()
+\begin{DoxyCompactList}\small\item\em Use these values for drawing player sprites as x and y are tl corner. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlayer_a0845a3837f83d31172c1e371189a7833}{get\+DrawY}} ()
+\begin{DoxyCompactList}\small\item\em Use these for drawing model sprites rather than getX and getY. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_aef55aff2cee1333a9ed4ca170babab1e}{size\+Pl\+Hbox}} (int wid, int ht)
+\begin{DoxyCompactList}\small\item\em Prototype for resizing player hitbox. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a26e5ee349b42ca9c4b9f7b98ec538c31}{upd\+Pl\+Hbox}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for updating player hitbox updates player hitbox after any change. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classPlayer_a43c90ea445bcf5c4ae4c7441a496434b}{get\+Pl\+Hbox}} ()
+\begin{DoxyCompactList}\small\item\em Prototype getter for player hitbox. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_af8e528ced72fa5d9bbb8e2638ed52b6e}{pick\+Up\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for picking up item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a3eacbc87fb123e9c187cb2f5225d4255}{set\+Animation}} (std\+::string anim)
+\begin{DoxyCompactList}\small\item\em Prototype setter for animation. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPlayer_a905888db2b44506198c2a1720c2e0389}{get\+Animation}} ()
+\begin{DoxyCompactList}\small\item\em Prototype getter for animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_aeea45f839f224a5320dfadfd2ff3ebe9}{attack}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for player attack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_aa7f4be205787cc28480582cc08d2b374}{push}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Prototype for pushing player nums. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlayer_a0636cc979c4bc69c5823ef122779c93c}{get\+Player\+Vel}} ()
+\begin{DoxyCompactList}\small\item\em Wall collision push call when player hitbox collides with walls. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayer_aedd0d5313f1240131b1efe5a90f84ba5}\label{classPlayer_aedd0d5313f1240131b1efe5a90f84ba5}} 
+void \mbox{\hyperlink{classPlayer_aedd0d5313f1240131b1efe5a90f84ba5}{set\+Player\+Vel}} (int v)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classPlayer}{Player}} speed setter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayer_aa04e569ac7978525753975a3edc3a55d}\label{classPlayer_aa04e569ac7978525753975a3edc3a55d}} 
+void \mbox{\hyperlink{classPlayer_aa04e569ac7978525753975a3edc3a55d}{equip\+Item}} (\mbox{\hyperlink{classItem}{Item}} $\ast$item)
+\begin{DoxyCompactList}\small\item\em equip item \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayer_ab61a61122117630f1e19f1d4d7e405fd}\label{classPlayer_ab61a61122117630f1e19f1d4d7e405fd}} 
+string \mbox{\hyperlink{classPlayer_ab61a61122117630f1e19f1d4d7e405fd}{get\+Active\+Item}} ()
+\begin{DoxyCompactList}\small\item\em get active item \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayer_a2de5831fe970f3389aef1f6d5a70d8f5}\label{classPlayer_a2de5831fe970f3389aef1f6d5a70d8f5}} 
+void \mbox{\hyperlink{classPlayer_a2de5831fe970f3389aef1f6d5a70d8f5}{clear\+Item}} ()
+\begin{DoxyCompactList}\small\item\em clear item \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classPlayer_a65d1fb3d32aa91fe1565051598b98390}{get\+XDir}} ()
+\begin{DoxyCompactList}\small\item\em Functions for getting Collision detection functions. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classPlayer_a79c37d75eeea25c3205f10f798c8c619}{get\+YDir}} ()
+\begin{DoxyCompactList}\small\item\em Getter for y direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPlayer_ad285b3cb25e4a46ca944b9a416c1b13f}\label{classPlayer_ad285b3cb25e4a46ca944b9a416c1b13f}} 
+int {\bfseries x}
+\item 
+\mbox{\Hypertarget{classPlayer_a6da29d6e3783c6028c92647bbde478f5}\label{classPlayer_a6da29d6e3783c6028c92647bbde478f5}} 
+int {\bfseries y}
+\item 
+\mbox{\Hypertarget{classPlayer_aad33b52bfe73c4c978a3135172f286a0}\label{classPlayer_aad33b52bfe73c4c978a3135172f286a0}} 
+int {\bfseries health}
+\item 
+\mbox{\Hypertarget{classPlayer_aeaeb39c73e57dbc0727f51a2b6c24b41}\label{classPlayer_aeaeb39c73e57dbc0727f51a2b6c24b41}} 
+int {\bfseries shield}
+\item 
+\mbox{\Hypertarget{classPlayer_a060d076b1e12ef1c75b7611ed9d5ab25}\label{classPlayer_a060d076b1e12ef1c75b7611ed9d5ab25}} 
+SDL\+\_\+\+Rect {\bfseries pl\+Hbox}
+\item 
+\mbox{\Hypertarget{classPlayer_a3b93d9ede2a31034ad8773d1ccc7d0d0}\label{classPlayer_a3b93d9ede2a31034ad8773d1ccc7d0d0}} 
+int {\bfseries hb\+Wid}
+\item 
+\mbox{\Hypertarget{classPlayer_ae7a63f62bf193638458c1ea783ae40f7}\label{classPlayer_ae7a63f62bf193638458c1ea783ae40f7}} 
+int {\bfseries hb\+Ht}
+\item 
+\mbox{\Hypertarget{classPlayer_ad6232ba6e80b74cddc9286e5faa0ce60}\label{classPlayer_ad6232ba6e80b74cddc9286e5faa0ce60}} 
+\mbox{\hyperlink{classItem}{Item}} $\ast$ {\bfseries active\+Item} = nullptr
+\item 
+\mbox{\Hypertarget{classPlayer_a615af8c7ab2c389f67a30b5b125200f0}\label{classPlayer_a615af8c7ab2c389f67a30b5b125200f0}} 
+int {\bfseries velocity}
+\item 
+\mbox{\Hypertarget{classPlayer_af56e7dc706bd04ec13f598d222ae3d97}\label{classPlayer_af56e7dc706bd04ec13f598d222ae3d97}} 
+int {\bfseries sprite\+Wid}
+\item 
+\mbox{\Hypertarget{classPlayer_a19e8b410f5fdd8b8b337714a33e484ed}\label{classPlayer_a19e8b410f5fdd8b8b337714a33e484ed}} 
+int {\bfseries sprite\+Ht}
+\item 
+\mbox{\Hypertarget{classPlayer_a8e6e202d4494d7388519d5ced4ccfb74}\label{classPlayer_a8e6e202d4494d7388519d5ced4ccfb74}} 
+SDL\+\_\+\+Point {\bfseries front}
+\item 
+\mbox{\Hypertarget{classPlayer_a6962c5e5044ebc70d0de720d1c497985}\label{classPlayer_a6962c5e5044ebc70d0de720d1c497985}} 
+std\+::string {\bfseries direction} = \char`\"{}down\char`\"{}
+\item 
+\mbox{\Hypertarget{classPlayer_a4f8ab067265c718edbce35f58bd69851}\label{classPlayer_a4f8ab067265c718edbce35f58bd69851}} 
+std\+::string {\bfseries XDirection}
+\item 
+\mbox{\Hypertarget{classPlayer_a744e12a76073392acca93bc06500cdd7}\label{classPlayer_a744e12a76073392acca93bc06500cdd7}} 
+std\+::string {\bfseries YDirection}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPlayer_a6bd781706b499cc9ee8d73fb7d7219fe}\label{classPlayer_a6bd781706b499cc9ee8d73fb7d7219fe}} 
+static const std\+::map$<$ std\+::string, int $>$ {\bfseries dir}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPlayer_ab7d5fae9dd4388d1034dd8e841296e46}\label{classPlayer_ab7d5fae9dd4388d1034dd8e841296e46}} 
+std\+::string {\bfseries animation} = \char`\"{}idle\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPlayer}{Player}} header file. 
+
+\mbox{\hyperlink{classPlayer}{Player}} class prototype 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlayer_a7d1676fb8b96e62a9a243e68f9bb99b2}\label{classPlayer_a7d1676fb8b96e62a9a243e68f9bb99b2}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{int}]{health = {\ttfamily 100},  }\item[{int}]{shield = {\ttfamily 0},  }\item[{int}]{x = {\ttfamily 400},  }\item[{int}]{y = {\ttfamily 400} }\end{DoxyParamCaption})}
+
+
+
+constructor prototype 
+
+\mbox{\hyperlink{classPlayer}{Player}} class represents a player.
+
+\begin{DoxyAuthor}{Authors}
+Aidan, Jaree, Alan
+\end{DoxyAuthor}
+\mbox{\hyperlink{classPlayer}{Player}} constructor initializes a player 
+\begin{DoxyParams}{Parameters}
+{\em health} & and position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_a749d2c00e1fe0f5c2746f7505a58c062}\label{classPlayer_a749d2c00e1fe0f5c2746f7505a58c062}} 
+\index{Player@{Player}!````~Player@{$\sim$Player}}
+\index{````~Player@{$\sim$Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{$\sim$Player()}{~Player()}}
+{\footnotesize\ttfamily Player\+::$\sim$\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructor prototype 
+
+Deconstructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlayer_aeea45f839f224a5320dfadfd2ff3ebe9}\label{classPlayer_aeea45f839f224a5320dfadfd2ff3ebe9}} 
+\index{Player@{Player}!attack@{attack}}
+\index{attack@{attack}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily void Player\+::attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for player attack. 
+
+\mbox{\hyperlink{classPlayer}{Player}} attack function. \mbox{\Hypertarget{classPlayer_a905888db2b44506198c2a1720c2e0389}\label{classPlayer_a905888db2b44506198c2a1720c2e0389}} 
+\index{Player@{Player}!getAnimation@{getAnimation}}
+\index{getAnimation@{getAnimation}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getAnimation()}{getAnimation()}}
+{\footnotesize\ttfamily std\+::string Player\+::get\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype getter for animation. 
+
+Getter for animation.
+
+\begin{DoxyReturn}{Returns}
+animation string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_ac612c5e98a2d6c85b4b797af1c7d102c}\label{classPlayer_ac612c5e98a2d6c85b4b797af1c7d102c}} 
+\index{Player@{Player}!getDirection@{getDirection}}
+\index{getDirection@{getDirection}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getDirection()}{getDirection()}}
+{\footnotesize\ttfamily std\+::string Player\+::get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+sprite direction 
+
+Getter for direction.
+
+\begin{DoxyReturn}{Returns}
+string direction
+
+string value for direction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_afea334f478acadd48ede47477e94e9dc}\label{classPlayer_afea334f478acadd48ede47477e94e9dc}} 
+\index{Player@{Player}!getDrawX@{getDrawX}}
+\index{getDrawX@{getDrawX}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getDrawX()}{getDrawX()}}
+{\footnotesize\ttfamily int Player\+::get\+DrawX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Use these values for drawing player sprites as x and y are tl corner. 
+
+Use these for drawing model sprites rather than getX and getY.
+
+\begin{DoxyAuthor}{Author}
+Alan 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classPlayer_a0845a3837f83d31172c1e371189a7833}\label{classPlayer_a0845a3837f83d31172c1e371189a7833}} 
+\index{Player@{Player}!getDrawY@{getDrawY}}
+\index{getDrawY@{getDrawY}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getDrawY()}{getDrawY()}}
+{\footnotesize\ttfamily int Player\+::get\+DrawY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Use these for drawing model sprites rather than getX and getY. 
+
+\begin{DoxyAuthor}{Author}
+Alan 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classPlayer_abcb15d249bed9a4ab0ab86b52b0d747a}\label{classPlayer_abcb15d249bed9a4ab0ab86b52b0d747a}} 
+\index{Player@{Player}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily int Player\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototypes for setters and getters for player health. 
+
+Getter for health.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & desired health of player\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int value for health 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_a0636cc979c4bc69c5823ef122779c93c}\label{classPlayer_a0636cc979c4bc69c5823ef122779c93c}} 
+\index{Player@{Player}!getPlayerVel@{getPlayerVel}}
+\index{getPlayerVel@{getPlayerVel}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getPlayerVel()}{getPlayerVel()}}
+{\footnotesize\ttfamily int Player\+::get\+Player\+Vel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Wall collision push call when player hitbox collides with walls. 
+
+\mbox{\hyperlink{classPlayer}{Player}} speed getter.
+
+Editing player veloctiy values \mbox{\Hypertarget{classPlayer_a43c90ea445bcf5c4ae4c7441a496434b}\label{classPlayer_a43c90ea445bcf5c4ae4c7441a496434b}} 
+\index{Player@{Player}!getPlHbox@{getPlHbox}}
+\index{getPlHbox@{getPlHbox}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getPlHbox()}{getPlHbox()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Player\+::get\+Pl\+Hbox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype getter for player hitbox. 
+
+Getter for player hitbox.
+
+\begin{DoxyReturn}{Returns}
+player hitbox for collision detection
+
+SDL\+\_\+\+Rect plhbox 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_a50d952b279f1a719314ee0f708d3eaaf}\label{classPlayer_a50d952b279f1a719314ee0f708d3eaaf}} 
+\index{Player@{Player}!getShield@{getShield}}
+\index{getShield@{getShield}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getShield()}{getShield()}}
+{\footnotesize\ttfamily int Player\+::get\+Shield (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for shield. 
+
+\begin{DoxyReturn}{Returns}
+int value for shield 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_a66fd07131797bddcc70a547d0d8acbe4}\label{classPlayer_a66fd07131797bddcc70a547d0d8acbe4}} 
+\index{Player@{Player}!getX@{getX}}
+\index{getX@{getX}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int Player\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for x. 
+
+\begin{DoxyReturn}{Returns}
+int value for x 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_a65d1fb3d32aa91fe1565051598b98390}\label{classPlayer_a65d1fb3d32aa91fe1565051598b98390}} 
+\index{Player@{Player}!getXDir@{getXDir}}
+\index{getXDir@{getXDir}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getXDir()}{getXDir()}}
+{\footnotesize\ttfamily std\+::string Player\+::get\+XDir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Functions for getting Collision detection functions. 
+
+Getter for x direction.
+
+\begin{DoxyReturn}{Returns}
+string value for x direction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_ade10b15f0966db5ba7ec24d3691786e6}\label{classPlayer_ade10b15f0966db5ba7ec24d3691786e6}} 
+\index{Player@{Player}!getY@{getY}}
+\index{getY@{getY}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int Player\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for y. 
+
+\begin{DoxyReturn}{Returns}
+int value for y 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_a79c37d75eeea25c3205f10f798c8c619}\label{classPlayer_a79c37d75eeea25c3205f10f798c8c619}} 
+\index{Player@{Player}!getYDir@{getYDir}}
+\index{getYDir@{getYDir}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getYDir()}{getYDir()}}
+{\footnotesize\ttfamily std\+::string Player\+::get\+YDir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for y direction. 
+
+\begin{DoxyReturn}{Returns}
+string value for y direction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_a225a3e732b737cb8a9d807f97b7930aa}\label{classPlayer_a225a3e732b737cb8a9d807f97b7930aa}} 
+\index{Player@{Player}!moveUp@{moveUp}}
+\index{moveUp@{moveUp}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{moveUp()}{moveUp()}}
+{\footnotesize\ttfamily void Player\+::move\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototyps for player movements. 
+
+Moves player up. \mbox{\Hypertarget{classPlayer_af8e528ced72fa5d9bbb8e2638ed52b6e}\label{classPlayer_af8e528ced72fa5d9bbb8e2638ed52b6e}} 
+\index{Player@{Player}!pickUpItem@{pickUpItem}}
+\index{pickUpItem@{pickUpItem}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{pickUpItem()}{pickUpItem()}}
+{\footnotesize\ttfamily void Player\+::pick\+Up\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for picking up item. 
+
+Picks up item Prototype. \mbox{\Hypertarget{classPlayer_aa7f4be205787cc28480582cc08d2b374}\label{classPlayer_aa7f4be205787cc28480582cc08d2b374}} 
+\index{Player@{Player}!push@{push}}
+\index{push@{push}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void Player\+::push (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Prototype for pushing player nums. 
+
+\mbox{\hyperlink{classPlayer}{Player}} push function.
+
+
+\begin{DoxyItemize}
+\item right
+\item left
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & how far you want to be pushed in the x direction \\
+\hline
+{\em y} & how far you want to be pushed in the y direction \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_a3eacbc87fb123e9c187cb2f5225d4255}\label{classPlayer_a3eacbc87fb123e9c187cb2f5225d4255}} 
+\index{Player@{Player}!setAnimation@{setAnimation}}
+\index{setAnimation@{setAnimation}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setAnimation()}{setAnimation()}}
+{\footnotesize\ttfamily void Player\+::set\+Animation (\begin{DoxyParamCaption}\item[{std\+::string}]{anim }\end{DoxyParamCaption})}
+
+
+
+Prototype setter for animation. 
+
+Setter for animation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & value for animation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_ab2ff568b7344fa57f2ff4b4b13a0582c}\label{classPlayer_ab2ff568b7344fa57f2ff4b4b13a0582c}} 
+\index{Player@{Player}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily void Player\+::set\+Direction (\begin{DoxyParamCaption}\item[{std\+::string}]{dir }\end{DoxyParamCaption})}
+
+
+
+setter for sprite direction 
+
+Setter for direction.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & desired direction\\
+\hline
+{\em string} & value for direction \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_a56c6b3c54757d38abd2034a5ece8e664}\label{classPlayer_a56c6b3c54757d38abd2034a5ece8e664}} 
+\index{Player@{Player}!setHealth@{setHealth}}
+\index{setHealth@{setHealth}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setHealth()}{setHealth()}}
+{\footnotesize\ttfamily void Player\+::set\+Health (\begin{DoxyParamCaption}\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+Setter for health. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & value for health \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_a0a29dabd9974c0879229ccfdecca699f}\label{classPlayer_a0a29dabd9974c0879229ccfdecca699f}} 
+\index{Player@{Player}!setShield@{setShield}}
+\index{setShield@{setShield}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setShield()}{setShield()}}
+{\footnotesize\ttfamily void Player\+::set\+Shield (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})}
+
+
+
+Setter for shield. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & value for shield \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_af1736f8320ea2af20bef3d67d6b3493e}\label{classPlayer_af1736f8320ea2af20bef3d67d6b3493e}} 
+\index{Player@{Player}!setX@{setX}}
+\index{setX@{setX}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Player\+::setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Setter for x. 
+
+Prototypes for setters and getters for X 
+\begin{DoxyParams}{Parameters}
+{\em desired} & x or y position\\
+\hline
+{\em int} & value for x \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_ad81b121309ac97bfade3fcd4f6ab62dd}\label{classPlayer_ad81b121309ac97bfade3fcd4f6ab62dd}} 
+\index{Player@{Player}!setY@{setY}}
+\index{setY@{setY}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Player\+::setY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Setter for y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & value for y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_aef55aff2cee1333a9ed4ca170babab1e}\label{classPlayer_aef55aff2cee1333a9ed4ca170babab1e}} 
+\index{Player@{Player}!sizePlHbox@{sizePlHbox}}
+\index{sizePlHbox@{sizePlHbox}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{sizePlHbox()}{sizePlHbox()}}
+{\footnotesize\ttfamily void Player\+::size\+Pl\+Hbox (\begin{DoxyParamCaption}\item[{int}]{wid,  }\item[{int}]{ht }\end{DoxyParamCaption})}
+
+
+
+Prototype for resizing player hitbox. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wid} & width of hitbox \\
+\hline
+{\em ht} & height of hitbox \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_a26e5ee349b42ca9c4b9f7b98ec538c31}\label{classPlayer_a26e5ee349b42ca9c4b9f7b98ec538c31}} 
+\index{Player@{Player}!updPlHbox@{updPlHbox}}
+\index{updPlHbox@{updPlHbox}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{updPlHbox()}{updPlHbox()}}
+{\footnotesize\ttfamily void Player\+::upd\+Pl\+Hbox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for updating player hitbox updates player hitbox after any change. 
+
+Updates player hitbox. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Player.\+hpp\item 
+Player.\+cpp\end{DoxyCompactItemize}

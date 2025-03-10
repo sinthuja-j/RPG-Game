@@ -1,0 +1,24 @@
+digraph "Game"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Game",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" target" ];
+  Node2 [label="Item",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classItem.html",tooltip="Item header file."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" graphics" ];
+  Node3 [label="Graphics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGraphics.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" graphics" ];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" enemy" ];
+  Node4 [label="Enemy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEnemy.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Player",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPlayer.html",tooltip="Player header file."];
+  Node2 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" activeItem" ];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" input" ];
+  Node6 [label="Input",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInput.html",tooltip="Input class header."];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mapInventory\nplayerInventory" ];
+  Node7 [label="Inventory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInventory.html",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" player" ];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mainWindow" ];
+  Node8 [label="MainWindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMainWindow.html",tooltip="Main window header file."];
+}

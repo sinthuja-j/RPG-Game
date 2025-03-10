@@ -1,0 +1,209 @@
+\hypertarget{classInventory}{}\doxysection{Inventory Class Reference}
+\label{classInventory}\index{Inventory@{Inventory}}
+
+
+{\ttfamily \#include $<$Inventory.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInventory_abe7d2994bec1752f5bbbc0c8b58d1c01}{Inventory}} (bool cap)
+\begin{DoxyCompactList}\small\item\em Constructor prototype. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInventory_affaa1aa5948d2c61ff10680f902d96f9}{add\+Item}} (\mbox{\hyperlink{classItem}{Item}} $\ast$item)
+\begin{DoxyCompactList}\small\item\em Prototype for adding an item. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classItem}{Item}} $\ast$ \mbox{\hyperlink{classInventory_a462d63923c1a9b00f879415739d507c3}{remove\+Item}} (\mbox{\hyperlink{classItem}{Item}} $\ast$item)
+\begin{DoxyCompactList}\small\item\em Prototype for removing an item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInventory_a7b844cc94f18925a66bd86b55b196602}{draw\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for rendering on items in inventory on screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classItem}{Item}} $\ast$ \mbox{\hyperlink{classInventory_a63d19a620ae9161757e8967ef05b56c2}{check\+Collision}} (SDL\+\_\+\+Rect pl\+HBOX)
+\begin{DoxyCompactList}\small\item\em Prototype for checking collisions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInventory_a7b6873e6760f2e4fe142ca5a47afa164}{has\+Item}} (std\+::string item\+Name)
+\begin{DoxyCompactList}\small\item\em Checks if item is in inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInventory_a36ebd698ad84131687a5a79a135f59f2}{display\+Inventory}} (\mbox{\hyperlink{classGraphics}{Graphics}} $\ast$graphics, int index)
+\begin{DoxyCompactList}\small\item\em Prototype for displaying inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInventory_ad2d9e47c395e46569be0a57002901251}{clear\+Inventory}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for clearing inventory. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classItem}{Item}} $\ast$ $>$ \mbox{\hyperlink{classInventory_a866368e146ba209b21170195fec17731}{get\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Prototype for getting items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classInventory_af2f35e8fc63c8efc9bb9678e355c7e72}\label{classInventory_af2f35e8fc63c8efc9bb9678e355c7e72}} 
+std\+::vector$<$ \mbox{\hyperlink{classItem}{Item}} $\ast$ $>$ {\bfseries items}
+\item 
+\mbox{\Hypertarget{classInventory_aa6bdb773257113ab06980bc72c384491}\label{classInventory_aa6bdb773257113ab06980bc72c384491}} 
+bool {\bfseries cap}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classInventory}{Inventory}} Header \mbox{\hyperlink{classInventory}{Inventory}} Header class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classInventory_abe7d2994bec1752f5bbbc0c8b58d1c01}\label{classInventory_abe7d2994bec1752f5bbbc0c8b58d1c01}} 
+\index{Inventory@{Inventory}!Inventory@{Inventory}}
+\index{Inventory@{Inventory}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{Inventory()}{Inventory()}}
+{\footnotesize\ttfamily Inventory\+::\+Inventory (\begin{DoxyParamCaption}\item[{bool}]{cap }\end{DoxyParamCaption})}
+
+
+
+Constructor prototype. 
+
+\mbox{\hyperlink{classInventory}{Inventory}} class a bucket of items that can be added to, removed from and drawn as well as collision handle.
+
+\begin{DoxyAuthor}{Author}
+Aidan 
+
+Jaree
+\end{DoxyAuthor}
+Constructor\+: only creates object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInventory_affaa1aa5948d2c61ff10680f902d96f9}\label{classInventory_affaa1aa5948d2c61ff10680f902d96f9}} 
+\index{Inventory@{Inventory}!addItem@{addItem}}
+\index{addItem@{addItem}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{addItem()}{addItem()}}
+{\footnotesize\ttfamily void Inventory\+::add\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classItem}{Item}} $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+Prototype for adding an item. 
+
+Add item to inventory.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & takes an \mbox{\hyperlink{classItem}{Item}} object\\
+\hline
+{\em $\ast$\+Item} & type to be added to items \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInventory_a63d19a620ae9161757e8967ef05b56c2}\label{classInventory_a63d19a620ae9161757e8967ef05b56c2}} 
+\index{Inventory@{Inventory}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classItem}{Item}} $\ast$ Inventory\+::check\+Collision (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Rect}]{pl\+HBOX }\end{DoxyParamCaption})}
+
+
+
+Prototype for checking collisions. 
+
+Checks \mbox{\hyperlink{classCollisions}{Collisions}} with.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pl\+HBOX} & takes an SDL\+\_\+\+Rect\\
+\hline
+{\em pl\+HBOX} & and all hit boxes of items \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if collision, return Item$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInventory_ad2d9e47c395e46569be0a57002901251}\label{classInventory_ad2d9e47c395e46569be0a57002901251}} 
+\index{Inventory@{Inventory}!clearInventory@{clearInventory}}
+\index{clearInventory@{clearInventory}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{clearInventory()}{clearInventory()}}
+{\footnotesize\ttfamily void Inventory\+::clear\+Inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for clearing inventory. 
+
+Clears \mbox{\hyperlink{classInventory}{Inventory}}. \mbox{\Hypertarget{classInventory_a36ebd698ad84131687a5a79a135f59f2}\label{classInventory_a36ebd698ad84131687a5a79a135f59f2}} 
+\index{Inventory@{Inventory}!displayInventory@{displayInventory}}
+\index{displayInventory@{displayInventory}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{displayInventory()}{displayInventory()}}
+{\footnotesize\ttfamily void Inventory\+::display\+Inventory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGraphics}{Graphics}} $\ast$}]{graphics,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Prototype for displaying inventory. 
+
+Displays \mbox{\hyperlink{classInventory}{Inventory}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & takes a \mbox{\hyperlink{classGraphics}{Graphics}} object \\
+\hline
+{\em index} & takes an int\\
+\hline
+{\em graphics} & \\
+\hline
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInventory_a7b844cc94f18925a66bd86b55b196602}\label{classInventory_a7b844cc94f18925a66bd86b55b196602}} 
+\index{Inventory@{Inventory}!drawItems@{drawItems}}
+\index{drawItems@{drawItems}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{drawItems()}{drawItems()}}
+{\footnotesize\ttfamily void Inventory\+::draw\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for rendering on items in inventory on screen. 
+
+Draws Items using graphics {\itshape {\bfseries{NOT FOR PLAYER}}} \mbox{\Hypertarget{classInventory_a866368e146ba209b21170195fec17731}\label{classInventory_a866368e146ba209b21170195fec17731}} 
+\index{Inventory@{Inventory}!getItems@{getItems}}
+\index{getItems@{getItems}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{getItems()}{getItems()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classItem}{Item}} $\ast$ $>$ Inventory\+::get\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prototype for getting items. 
+
+Getter for items.
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Item$\ast$$>$ items 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInventory_a7b6873e6760f2e4fe142ca5a47afa164}\label{classInventory_a7b6873e6760f2e4fe142ca5a47afa164}} 
+\index{Inventory@{Inventory}!hasItem@{hasItem}}
+\index{hasItem@{hasItem}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{hasItem()}{hasItem()}}
+{\footnotesize\ttfamily bool Inventory\+::has\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+Name }\end{DoxyParamCaption})}
+
+
+
+Checks if item is in inventory. 
+
+brief Prototype for checking if item is in inventory 
+\begin{DoxyParams}{Parameters}
+{\em item\+Name} & takes a string\\
+\hline
+{\em item\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if item is in inventory 
+
+false if item is not in inventory 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInventory_a462d63923c1a9b00f879415739d507c3}\label{classInventory_a462d63923c1a9b00f879415739d507c3}} 
+\index{Inventory@{Inventory}!removeItem@{removeItem}}
+\index{removeItem@{removeItem}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{removeItem()}{removeItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classItem}{Item}} $\ast$ Inventory\+::remove\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classItem}{Item}} $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+Prototype for removing an item. 
+
+Removes item from \mbox{\hyperlink{classInventory}{Inventory}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & takes an \mbox{\hyperlink{classItem}{Item}} object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if match, returns $\ast$\+Item to caller\+SS 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Inventory.\+hpp\item 
+Inventory.\+cpp\end{DoxyCompactItemize}
